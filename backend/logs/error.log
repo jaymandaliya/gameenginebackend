@@ -1,0 +1,18 @@
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T09:58:16.653Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:05:59.103Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:21.012Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:21.950Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:36.586Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:37.686Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:46.892Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:48.745Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-08T07:04:21.863Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-08T07:04:32.281Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-08T07:04:41.343Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-08T07:04:42.763Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-08T09:31:09.249Z"}
+{"level":"error","message":"Error: Cannot read properties of null (reading 'alliance_id')","stack":"TypeError: Cannot read properties of null (reading 'alliance_id')\n    at createAlliance (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/controllers/alliance.controller.js:12:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2026-01-08T09:31:55.817Z"}
+{"level":"error","message":"Error: Cannot read properties of null (reading 'alliance_id')","stack":"TypeError: Cannot read properties of null (reading 'alliance_id')\n    at createAlliance (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/controllers/alliance.controller.js:12:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2026-01-08T09:32:47.802Z"}
+{"level":"error","message":"Error: Cannot read properties of null (reading 'alliance_id')","stack":"TypeError: Cannot read properties of null (reading 'alliance_id')\n    at createAlliance (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/controllers/alliance.controller.js:12:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2026-01-08T09:33:00.522Z"}
+{"level":"error","message":"Error: Cannot read properties of null (reading 'alliance_id')","stack":"TypeError: Cannot read properties of null (reading 'alliance_id')\n    at createAlliance (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/controllers/alliance.controller.js:12:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2026-01-08T11:01:59.845Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-02-23T08:15:04.965Z"}

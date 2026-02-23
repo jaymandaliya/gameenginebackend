@@ -1,0 +1,416 @@
+{
+  "info": {
+    "name": "2D Game Engine - Complete API",
+    "description": "Complete API collection for 2D Strategy MMO Game Engine\n\n**All APIs Working Including Scene API!**\n\nSetup:\n1. Import collection\n2. Register/Login (token auto-saves)\n3. Start testing!",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000/api/v1",
+      "type": "string"
+    },
+    {
+      "key": "token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "projectId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "sceneId",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Register",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    const response = pm.response.json();",
+                  "    pm.collectionVariables.set('token', response.data.tokens.accessToken);",
+                  "    console.log('✅ Token saved:', response.data.tokens.accessToken);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"test@game.com\",\n  \"username\": \"testuser\",\n  \"password\": \"password123\",\n  \"displayName\": \"Test User\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/register",
+              "host": ["{{baseUrl}}"],
+              "path": ["auth", "register"]
+            }
+          }
+        },
+        {
+          "name": "Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 200) {",
+                  "    const response = pm.response.json();",
+                  "    pm.collectionVariables.set('token', response.data.tokens.accessToken);",
+                  "    console.log('✅ Login successful, token saved');",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"test@game.com\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/login",
+              "host": ["{{baseUrl}}"],
+              "path": ["auth", "login"]
+            }
+          }
+        },
+        {
+          "name": "Get Current User",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+            "url": {
+              "raw": "{{baseUrl}}/auth/me",
+              "host": ["{{baseUrl}}"],
+              "path": ["auth", "me"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "item": [
+        {
+          "name": "Get All Projects",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+            "url": {
+              "raw": "{{baseUrl}}/projects",
+              "host": ["{{baseUrl}}"],
+              "path": ["projects"]
+            }
+          }
+        },
+        {
+          "name": "Create Project",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    const response = pm.response.json();",
+                  "    pm.collectionVariables.set('projectId', response.data._id);",
+                  "    console.log('✅ Project created, ID saved:', response.data._id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"My Strategy Game\",\n  \"description\": \"Epic 2D MMO Strategy Game\",\n  \"mode\": \"2d\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/projects",
+              "host": ["{{baseUrl}}"],
+              "path": ["projects"]
+            }
+          }
+        },
+        {
+          "name": "Get Project",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+            "url": {
+              "raw": "{{baseUrl}}/projects/{{projectId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["projects", "{{projectId}}"]
+            }
+          }
+        },
+        {
+          "name": "Update Project",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Updated Game Name\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/projects/{{projectId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["projects", "{{projectId}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete Project",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+            "url": {
+              "raw": "{{baseUrl}}/projects/{{projectId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["projects", "{{projectId}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenes",
+      "item": [
+        {
+          "name": "Get All Scenes",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+            "url": {
+              "raw": "{{baseUrl}}/scenes?projectId={{projectId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["scenes"],
+              "query": [{"key": "projectId", "value": "{{projectId}}"}]
+            }
+          }
+        },
+        {
+          "name": "Create Scene",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    const response = pm.response.json();",
+                  "    pm.collectionVariables.set('sceneId', response.data._id);",
+                  "    console.log('✅ Scene created, ID saved:', response.data._id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Main Menu\",\n  \"projectId\": \"{{projectId}}\",\n  \"mode\": \"2d\",\n  \"backgroundColor\": \"#87CEEB\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/scenes",
+              "host": ["{{baseUrl}}"],
+              "path": ["scenes"]
+            }
+          }
+        },
+        {
+          "name": "Get Scene",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+            "url": {
+              "raw": "{{baseUrl}}/scenes/{{sceneId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["scenes", "{{sceneId}}"]
+            }
+          }
+        },
+        {
+          "name": "Update Scene",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Updated Scene Name\",\n  \"backgroundColor\": \"#000000\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/scenes/{{sceneId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["scenes", "{{sceneId}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete Scene",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+            "url": {
+              "raw": "{{baseUrl}}/scenes/{{sceneId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["scenes", "{{sceneId}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Objects",
+      "item": [
+        {
+          "name": "Get Objects",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+            "url": {
+              "raw": "{{baseUrl}}/objects?sceneId={{sceneId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["objects"],
+              "query": [{"key": "sceneId", "value": "{{sceneId}}"}]
+            }
+          }
+        },
+        {
+          "name": "Create Object",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Player Character\",\n  \"sceneId\": \"{{sceneId}}\",\n  \"type\": \"sprite\",\n  \"position\": {\"x\": 100, \"y\": 200},\n  \"scale\": {\"x\": 1, \"y\": 1}\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/objects",
+              "host": ["{{baseUrl}}"],
+              "path": ["objects"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Assets",
+      "item": [
+        {
+          "name": "Get Assets",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+            "url": {
+              "raw": "{{baseUrl}}/assets",
+              "host": ["{{baseUrl}}"],
+              "path": ["assets"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Prefabs",
+      "item": [
+        {
+          "name": "Get Prefabs",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+            "url": {
+              "raw": "{{baseUrl}}/prefabs",
+              "host": ["{{baseUrl}}"],
+              "path": ["prefabs"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Resources",
+      "item": [
+        {
+          "name": "Get Resources",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+            "url": {
+              "raw": "{{baseUrl}}/resources",
+              "host": ["{{baseUrl}}"],
+              "path": ["resources"]
+            }
+          }
+        },
+        {
+          "name": "Add Resources",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"gold\": 100,\n  \"wood\": 50\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/resources/add",
+              "host": ["{{baseUrl}}"],
+              "path": ["resources", "add"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["health"]
+        }
+      }
+    }
+  ]
+}

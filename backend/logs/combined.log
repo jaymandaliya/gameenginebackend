@@ -1,0 +1,373 @@
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-01-05T09:55:25.866Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-01-05T09:55:25.873Z"}
+{"level":"info","message":"GET /api/v1/ai/status","timestamp":"2026-01-05T09:56:48.758Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-01-05T09:58:16.650Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T09:58:16.653Z"}
+{"level":"info","message":"GET /health","timestamp":"2026-01-05T10:03:05.262Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-01-05T10:05:43.296Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-01-05T10:05:43.302Z"}
+{"level":"info","message":"POST /api/v1/auth/register","timestamp":"2026-01-05T10:05:49.242Z"}
+{"level":"info","message":"User registered: player@game.com","timestamp":"2026-01-05T10:05:49.464Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-01-05T10:05:54.872Z"}
+{"level":"info","message":"User logged in: player@game.com","timestamp":"2026-01-05T10:05:55.082Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-01-05T10:05:59.100Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:05:59.103Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-01-05T10:06:21.010Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:21.012Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-01-05T10:06:21.948Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:21.950Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-01-05T10:06:23.901Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-01-05T10:06:36.584Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:36.586Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-01-05T10:06:37.684Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:37.686Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-01-05T10:06:39.360Z"}
+{"level":"info","message":"POST /api/v1/projects","timestamp":"2026-01-05T10:06:46.891Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:46.892Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-01-05T10:06:48.743Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-05T10:06:48.745Z"}
+{"level":"info","message":"GET /api/v1/ai/status","timestamp":"2026-01-05T10:07:00.869Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","timestamp":"2026-01-05T10:23:04.430Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-01-07T05:30:56.919Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-01-07T05:30:56.926Z"}
+{"level":"info","message":"GET /health","timestamp":"2026-01-07T05:30:58.207Z"}
+{"level":"info","message":"POST /api/v1/auth/register","timestamp":"2026-01-07T05:31:00.629Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","timestamp":"2026-01-07T08:22:09.138Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-01-07T08:22:11.568Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-01-07T08:22:11.577Z"}
+{"level":"info","message":"POST /api/v1/auth/register","timestamp":"2026-01-07T08:22:14.094Z"}
+{"level":"info","message":"GET /health","timestamp":"2026-01-07T08:22:14.099Z"}
+{"level":"info","message":"GET /health","timestamp":"2026-01-07T08:22:14.525Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-01-08T07:03:32.287Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-01-08T07:03:32.294Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-01-08T07:04:21.859Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-08T07:04:21.863Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-01-08T07:04:25.661Z"}
+{"level":"info","message":"User logged in: player@game.com","timestamp":"2026-01-08T07:04:25.872Z"}
+{"level":"info","message":"GET /health","timestamp":"2026-01-08T07:04:27.524Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-01-08T07:04:32.279Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-08T07:04:32.281Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-01-08T07:04:41.341Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-08T07:04:41.343Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-01-08T07:04:42.761Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-08T07:04:42.763Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-01-08T07:04:48.519Z"}
+{"level":"info","message":"POST /api/v1/projects","timestamp":"2026-01-08T07:04:54.410Z"}
+{"level":"info","message":"Project created: 695f5716f7033aea0b421afd","timestamp":"2026-01-08T07:04:54.470Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-01-08T07:04:56.207Z"}
+{"level":"info","message":"GET /api/v1/alliances","timestamp":"2026-01-08T09:31:09.231Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-01-08T09:31:09.249Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-01-08T09:31:17.968Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-01-08T09:31:33.522Z"}
+{"level":"info","message":"User logged in: player@game.com","timestamp":"2026-01-08T09:31:33.712Z"}
+{"level":"info","message":"GET /api/v1/alliances","timestamp":"2026-01-08T09:31:50.219Z"}
+{"level":"info","message":"POST /api/v1/alliances/create","timestamp":"2026-01-08T09:31:55.761Z"}
+{"level":"error","message":"Error: Cannot read properties of null (reading 'alliance_id')","stack":"TypeError: Cannot read properties of null (reading 'alliance_id')\n    at createAlliance (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/controllers/alliance.controller.js:12:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2026-01-08T09:31:55.817Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","timestamp":"2026-01-08T09:32:25.931Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-01-08T09:32:28.167Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-01-08T09:32:28.172Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-01-08T09:32:42.998Z"}
+{"level":"info","message":"GET /api/v1/alliances","timestamp":"2026-01-08T09:32:46.455Z"}
+{"level":"info","message":"POST /api/v1/alliances/create","timestamp":"2026-01-08T09:32:47.742Z"}
+{"level":"error","message":"Error: Cannot read properties of null (reading 'alliance_id')","stack":"TypeError: Cannot read properties of null (reading 'alliance_id')\n    at createAlliance (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/controllers/alliance.controller.js:12:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2026-01-08T09:32:47.802Z"}
+{"level":"info","message":"GET /api/v1/alliances/","timestamp":"2026-01-08T09:32:50.127Z"}
+{"level":"info","message":"POST /api/v1/alliances/create","timestamp":"2026-01-08T09:33:00.238Z"}
+{"level":"error","message":"Error: Cannot read properties of null (reading 'alliance_id')","stack":"TypeError: Cannot read properties of null (reading 'alliance_id')\n    at createAlliance (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/controllers/alliance.controller.js:12:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2026-01-08T09:33:00.522Z"}
+{"level":"info","message":"GET /api/v1/alliances/","timestamp":"2026-01-08T09:33:03.341Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-01-08T11:01:51.876Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-01-08T11:01:51.887Z"}
+{"level":"info","message":"POST /api/v1/alliances/create","timestamp":"2026-01-08T11:01:59.779Z"}
+{"level":"error","message":"Error: Cannot read properties of null (reading 'alliance_id')","stack":"TypeError: Cannot read properties of null (reading 'alliance_id')\n    at createAlliance (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/controllers/alliance.controller.js:12:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2026-01-08T11:01:59.845Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-01-08T11:02:27.135Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-01-08T11:02:27.142Z"}
+{"level":"info","message":"POST /api/v1/alliances/create","timestamp":"2026-01-08T11:02:27.530Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-01-08T11:02:35.502Z"}
+{"level":"info","message":"User logged in: player@game.com","timestamp":"2026-01-08T11:02:35.717Z"}
+{"level":"info","message":"POST /api/v1/alliances/create","timestamp":"2026-01-08T11:02:42.284Z"}
+{"level":"info","message":"POST /api/v1/alliances/create","timestamp":"2026-01-08T11:02:43.959Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-01-08T11:03:03.639Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-01-08T11:03:03.645Z"}
+{"level":"info","message":"POST /api/v1/alliances/create","timestamp":"2026-01-08T11:03:04.170Z"}
+{"level":"info","message":"POST /api/v1/auth/register","timestamp":"2026-01-08T11:04:04.905Z"}
+{"level":"info","message":"User registered: newuser@test.com","timestamp":"2026-01-08T11:04:05.121Z"}
+{"level":"info","message":"POST /api/v1/alliances/create","timestamp":"2026-01-08T11:04:25.474Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-01-08T11:04:39.352Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-01-08T11:04:48.013Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-14T15:35:32.351Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-14T15:35:32.358Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-02-15T06:05:46.513Z"}
+{"level":"info","message":"POST /api/v1/auth/logout","timestamp":"2026-02-15T06:06:29.094Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-02-15T06:06:38.418Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-15T06:06:39.278Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-02-15T06:10:27.282Z"}
+{"level":"info","message":"POST /api/v1/auth/register","timestamp":"2026-02-15T06:10:29.824Z"}
+{"level":"info","message":"User registered: test@example.com","timestamp":"2026-02-15T06:10:30.064Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-02-15T06:10:33.358Z"}
+{"level":"info","message":"User logged in: test@example.com","timestamp":"2026-02-15T06:10:33.543Z"}
+{"level":"info","message":"POST /api/v1/auth/logout","timestamp":"2026-02-15T06:10:40.663Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-02-15T06:10:46.582Z"}
+{"level":"info","message":"User logged in: test@example.com","timestamp":"2026-02-15T06:10:46.762Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-15T06:10:48.997Z"}
+{"level":"info","message":"POST /api/v1/projects","timestamp":"2026-02-15T06:10:53.434Z"}
+{"level":"info","message":"Project created: 6991636d5bd776c091656857","timestamp":"2026-02-15T06:10:53.501Z"}
+{"level":"info","message":"GET /api/v1/scenes","timestamp":"2026-02-15T06:10:54.458Z"}
+{"level":"info","message":"POST /api/v1/scenes","timestamp":"2026-02-15T06:10:55.848Z"}
+{"level":"info","message":"Scene created: 6991636f5bd776c09165685c for project: 6991636d5bd776c091656857","timestamp":"2026-02-15T06:10:56.038Z"}
+{"level":"info","message":"GET /api/v1/scenes","timestamp":"2026-02-15T06:10:56.049Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-15T06:11:00.892Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-15T06:11:08.084Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T06:11:52.006Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T06:11:52.013Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T06:11:52.018Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T06:11:52.023Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T06:12:00.625Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T06:12:00.630Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T06:12:00.635Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T06:12:00.639Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-15T10:06:50.866Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-15T10:11:37.486Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T10:11:50.847Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T10:11:50.854Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T10:11:50.860Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T10:11:50.865Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T10:11:56.259Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T10:11:56.263Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T10:11:56.267Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T10:11:56.271Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-15T10:12:03.510Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-15T10:12:13.261Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-15T10:12:22.297Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-15T10:12:26.981Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-15T10:12:38.330Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-15T10:13:28.209Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-15T10:16:30.281Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-15T10:17:47.828Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-15T10:17:49.076Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-15T10:21:13.752Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-15T10:21:13.943Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-15T10:22:52.489Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-15T10:22:52.647Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-15T18:54:18.534Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-15T18:54:18.540Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-15T18:54:34.192Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-15T18:54:34.316Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-15T18:55:09.696Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-15T18:55:11.856Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-15T18:55:11.867Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-15T18:55:11.877Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-15T18:55:27.080Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-15T18:55:27.094Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-15T18:55:27.103Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-15T18:55:34.695Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-15T18:55:34.712Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-15T18:55:34.725Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-15T18:55:39.717Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-15T18:55:44.876Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-15T18:55:46.986Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T18:55:52.081Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T18:55:52.084Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T18:55:52.088Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-15T18:55:52.092Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-15T18:56:00.134Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-16T05:23:07.068Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-16T05:23:07.075Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-16T05:41:05.083Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-02-16T06:28:03.071Z"}
+{"level":"info","message":"User logged in: test@example.com","timestamp":"2026-02-16T06:28:03.305Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-02-16T06:28:13.275Z"}
+{"level":"info","message":"User logged in: test@example.com","timestamp":"2026-02-16T06:28:13.470Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-16T06:28:13.520Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-16T06:29:00.884Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-16T06:29:04.697Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-16T06:29:04.711Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-16T06:29:04.720Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-16T06:32:59.574Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-16T06:32:59.587Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-16T06:32:59.598Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T08:04:42.758Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T08:04:42.763Z"}
+{"level":"info","message":"POST /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:10:40.274Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:10:40.281Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:10:40.287Z"}
+{"level":"info","message":"POST /api/v1/openai/suggested-commands","timestamp":"2026-02-23T08:10:40.293Z"}
+{"level":"info","message":"POST /api/v1/openai/parse-command","timestamp":"2026-02-23T08:10:40.299Z"}
+{"level":"info","message":"POST /api/v1/openai/generate-code","timestamp":"2026-02-23T08:10:40.304Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:10:51.152Z"}
+{"level":"info","message":"POST /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:10:51.159Z"}
+{"level":"info","message":"GET /api/v1/ai/parse-command","timestamp":"2026-02-23T08:10:51.165Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:10:51.171Z"}
+{"level":"info","message":"GET /api/v1/ai/generate-code","timestamp":"2026-02-23T08:10:51.177Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:10:51.182Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T08:15:04.959Z"}
+{"level":"error","message":"Auth error:","timestamp":"2026-02-23T08:15:04.965Z"}
+{"level":"info","message":"POST /api/v1/auth/refresh","timestamp":"2026-02-23T08:15:04.973Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T08:15:05.042Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:15:05.163Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:15:20.094Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:15:22.590Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:15:22.603Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:15:22.613Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:15:43.014Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:15:43.023Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:15:43.032Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T08:17:41.220Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:17:41.331Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:17:49.355Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:17:51.705Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:17:51.717Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:17:51.728Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:17:56.465Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:17:56.476Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:17:56.485Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:18:24.749Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:18:25.197Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T08:18:28.719Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T08:18:28.723Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T08:18:28.727Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T08:18:28.730Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:18:44.372Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:19:13.849Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:19:16.258Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:19:18.216Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:19:18.228Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:19:18.238Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T08:19:38.026Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:19:38.131Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:24:52.019Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:24:54.601Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:24:54.612Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:24:54.621Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:25:37.404Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:25:37.420Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:25:37.430Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:26:36.056Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:27:00.058Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:27:00.070Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:27:44.894Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:27:44.896Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T08:28:15.873Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:28:15.972Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:28:27.192Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:28:31.902Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:28:31.912Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","timestamp":"2026-02-23T08:29:26.151Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T08:29:28.582Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T08:29:28.587Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:30:07.846Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:30:07.850Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:31:30.510Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:31:30.524Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:31:30.535Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T08:31:34.190Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:31:34.306Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:31:37.380Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:31:38.847Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:31:38.860Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:31:38.870Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:32:07.387Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:32:07.436Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:32:07.439Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:33:50.392Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:33:50.406Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:33:50.417Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:34:54.265Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:34:54.267Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:35:00.437Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:36:02.435Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:36:02.436Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:36:13.281Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:36:13.283Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:37:18.173Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:37:18.186Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:37:18.196Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","timestamp":"2026-02-23T08:37:23.699Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T08:37:26.865Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T08:37:26.873Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:38:34.138Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:38:34.153Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:38:34.166Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:38:55.251Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:39:10.056Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:39:10.071Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:39:10.082Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:40:23.870Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T08:43:09.581Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T08:43:09.587Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T08:43:17.855Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T08:43:17.863Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:43:32.720Z"}
+{"commandPreview":"Add a red castle in the center","level":"info","message":"[AI][BACKEND] parse-command.request","timestamp":"2026-02-23T08:43:32.724Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][BACKEND] parse-command.response","resultPreview":"{\"action\":\"create_object\",\"parameters\":{\"type\":\"sprite\",\"name\":\"Player\",\"position\":{\"x\":100,\"y\":100}},\"confidence\":0.95}","resultType":"object","timestamp":"2026-02-23T08:43:32.725Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:43:32.739Z"}
+{"descriptionPreview":"As a level designer, generate a complete 2D level layout as JSON. Include name, objects array (each with name, type, x, y, width, height, color, behaviors), background color, and tips.\n\nGame Type: modify_object\nDifficulty: medium\nTheme: Add a red castle in the center\nDimensions: 402x494","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T08:43:32.740Z","userId":"699163555bd776c091656850"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"// As a level designer, generate a complete 2D level layout as JSON. Include name, objects array (each with name, type, x, y, width, height, color, behaviors), background color, and tips.\\n\\nGame Type: modify_object\\nDifficulty: medium\\nTheme: Add a red castle in the center\\nDimensions: 402x494\\nfunction gameLogic() {\\n  console.log('Mock code generated');\\n}\",\"language\":\"json\",\"explanation\":\"This is mock generated code\"}","resultType":"object","timestamp":"2026-02-23T08:43:32.741Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:43:32.754Z"}
+{"descriptionPreview":"As a game design consultant, analyze this game and provide 5-7 actionable improvement suggestions as a JSON array of strings.\n\nGame: AI Game\nType: unknown\nObjects:\n\n\nReturn JSON: { \"suggestions\": [\"suggestion1\", \"suggestion2\", ...] }","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T08:43:32.755Z","userId":"699163555bd776c091656850"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"// As a game design consultant, analyze this game and provide 5-7 actionable improvement suggestions as a JSON array of strings.\\n\\nGame: AI Game\\nType: unknown\\nObjects:\\n\\n\\nReturn JSON: { \\\"suggestions\\\": [\\\"suggestion1\\\", \\\"suggestion2\\\", ...] }\\nfunction gameLogic() {\\n  console.log('Mock code generated');\\n}\",\"language\":\"json\",\"explanation\":\"This is mock generated code\"}","resultType":"object","timestamp":"2026-02-23T08:43:32.755Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T08:46:56.253Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T08:46:56.259Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T08:47:16.312Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:47:16.316Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T08:47:49.454Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T08:47:49.461Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:47:56.571Z"}
+{"commandPreview":"Add a red castle in the center","level":"info","message":"[AI][BACKEND] parse-command.request","timestamp":"2026-02-23T08:47:56.574Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] parseCommand mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:47:56.575Z"}
+{"level":"info","message":"Command parsed: Add a red castle in the center -> create_object","timestamp":"2026-02-23T08:48:01.594Z"}
+{"level":"info","message":"[AI][BACKEND] parse-command.response","resultPreview":"{\"action\":\"create_object\",\"parameters\":{\"type\":\"sprite\",\"name\":\"red_castle\",\"position\":\"center\",\"color\":\"red\",\"asset\":\"castle\"},\"confidence\":0.95}","resultType":"object","timestamp":"2026-02-23T08:48:01.595Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:48:01.607Z"}
+{"descriptionPreview":"As a level designer, generate a complete 2D level layout as JSON. Include name, objects array (each with name, type, x, y, width, height, color, behaviors), background color, and tips.\n\nGame Type: create_object\nDifficulty: medium\nTheme: Add a red castle in the center\nDimensions: 402x494","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T08:48:01.610Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:48:01.611Z"}
+{"level":"info","message":"Code generated for: As a level designer, generate a complete 2D level layout as JSON. Include name, objects array (each with name, type, x, y, width, height, color, behaviors), background color, and tips.\n\nGame Type: create_object\nDifficulty: medium\nTheme: Add a red castle in the center\nDimensions: 402x494","timestamp":"2026-02-23T08:48:14.528Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"name\\\": \\\"Castle Creation\\\",\\n  \\\"objects\\\": [\\n    {\\n      \\\"name\\\": \\\"Red Castle\\\",\\n      \\\"type\\\": \\\"static\\\",\\n      \\\"x\\\": 151,\\n      \\\"y\\\": 197,\\n      \\\"width\\\": 100,\\n      \\\"height\\\": 100,\\n      \\\"color\\\": \\\"red\\\",\\n      \\\"behaviors\\\": []\\n    },\\n    {\\n      \\\"name\\\": \\\"Tree\\\",\\n      \\\"type\\\": \\\"static\\\",\\n      \\\"x\\\": 50,\\n      \\\"y\\\": 444,\\n      \\\"width\\\": 20,\\n      \\\"height\\\": 50,\\n      \\\"color\\\": \\\"green\\\",\\n      \\\"behaviors\\\": []\\n    },\\n    {\\n      \\\"name\\\": \\\"Tree\\\",\\n      \\\"type\\\": \\\"static\\\",\\n      \\\"x\\\": 332,\\n      \\\"y\\\": 444,\\n      \\\"width\\\": 20,\\n      \\\"height\\\": 50,\\n      \\\"color\\\": \\\"green\\\",\\n      \\\"behaviors\\\": []\\n    },\\n    {\\n      \\\"name\\\": \\\"Cloud\\\",\\n      \\\"type\\\": \\\"floating\\\",\\n      \\\"x\\\": 100,\\n      \\\"y\\\": 50,\\n      \\\"width\\\": 60,\\n      \\\"height\\\": 30,\\n      \\\"color\\\": \\\"white\\\",\\n      \\\"behaviors\\\": [\\n        {\\n          \\\"type\\\": \\\"move\\\",\\n          \\\"direction\\\": \\\"horizontal\\\",\\n          \\\"speed\\\": 1\\n        }\\n      ]\\n    },\\n    {\\n      \\\"name\\\": \\\"Cloud\\\",\\n      \\\"type\\\": \\\"floating\\\",\\n      \\\"x\\\": 242,\\n      \\\"y\\\": 100,\\n      \\\"width\\\": 60,\\n      \\\"height\\\": 30,\\n      \\\"color\\\": \\\"white\\\",\\n      \\\"behaviors\\\": [\\n        {\\n          \\\"type\\\": \\\"move\\\",\\n          \\\"direction\\\": \\\"horizontal\\\",\\n          \\\"speed\\\": 1\\n        }\\n      ]\\n    }\\n  ],\\n  \\\"background_color\\\": \\\"#87CEEB\\\",\\n  \\\"tips\\\": [\\n    \\\"Use the trees to hide and plan your approach to the castle.\\\",\\n    \\\"Watch the clouds to learn about wind direction and speed.\\\"\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T08:48:14.529Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:48:14.551Z"}
+{"descriptionPreview":"As a game behavior designer, suggest behaviors for this object. Return JSON: { \"behaviors\": [{ \"type\": string, \"properties\": {}, \"description\": string }] }\n\nObject: Red Castle\nRole: player\nGame Type: Add a red castle in the center","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T08:48:14.553Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:48:14.553Z"}
+{"level":"info","message":"Code generated for: As a game behavior designer, suggest behaviors for this object. Return JSON: { \"behaviors\": [{ \"type\": string, \"properties\": {}, \"description\": string }] }\n\nObject: Red Castle\nRole: player\nGame Type: Add a red castle in the center","timestamp":"2026-02-23T08:48:24.558Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"behaviors\\\": [\\n    {\\n      \\\"type\\\": \\\"DefensiveStructure\\\",\\n      \\\"properties\\\": {\\n        \\\"hitPoints\\\": 5000,\\n        \\\"defenseRating\\\": 200,\\n        \\\"repairRate\\\": 50\\n      },\\n      \\\"description\\\": \\\"The Red Castle serves as a formidable defensive structure, able to withstand significant enemy attacks before succumbing.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ResourceGenerator\\\",\\n      \\\"properties\\\": {\\n        \\\"resourceType\\\": \\\"Gold\\\",\\n        \\\"generationRate\\\": 100,\\n        \\\"capacity\\\": 10000\\n      },\\n      \\\"description\\\": \\\"Generates gold over time, which players can use to upgrade the castle, train units, or build defenses.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"UnitTrainingFacility\\\",\\n      \\\"properties\\\": {\\n        \\\"unitTypes\\\": [\\\"Archer\\\", \\\"Knight\\\", \\\"SiegeEngine\\\"],\\n        \\\"trainingSpeed\\\": 1.0,\\n        \\\"capacity\\\": 3\\n      },\\n      \\\"description\\\": \\\"Trains various types of military units that players can use to attack enemies or defend the castle.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"Upgradeable\\\",\\n      \\\"properties\\\": {\\n        \\\"upgradeLevels\\\": 5,\\n        \\\"currentLevel\\\": 1,\\n        \\\"upgradeCosts\\\": [\\\"500 Gold\\\", \\\"1000 Gold\\\", \\\"2000 Gold\\\", \\\"4000 Gold\\\"]\\n      },\\n      \\\"description\\\": \\\"Allows the castle to be upgraded, increasing its defense, capacity, and the efficiency of its facilities.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"CommandCenter\\\",\\n      \\\"properties\\\": {\\n        \\\"controlRadius\\\": 500,\\n        \\\"alliedUnitsBoost\\\": {\\\"attack\\\": 10, \\\"defense\\\": 10},\\n        \\\"enemyDebuffs\\\": {\\\"speed\\\": -10}\\n      },\\n      \\\"description\\\": \\\"Acts as the strategic center of the player's territory, boosting allied units' effectiveness and hindering enemy units within its radius.\\\"\\n    }\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T08:48:24.558Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:48:24.576Z"}
+{"descriptionPreview":"As a game design consultant, analyze this game and provide 5-7 actionable improvement suggestions as a JSON array of strings.\n\nGame: Castle Creation\nType: unknown\nObjects:\nRed Castle (no behaviors)\nTree (no behaviors)\nTree (no behaviors)\nCloud (no behaviors)\nCloud (no behaviors)\n\nReturn JSON: { \"suggestions\": [\"suggestion1\", \"suggestion2\", ...] }","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T08:48:24.577Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:48:24.577Z"}
+{"level":"info","message":"Code generated for: As a game design consultant, analyze this game and provide 5-7 actionable improvement suggestions as a JSON array of strings.\n\nGame: Castle Creation\nType: unknown\nObjects:\nRed Castle (no behaviors)\nTree (no behaviors)\nTree (no behaviors)\nCloud (no behaviors)\nCloud (no behaviors)\n\nReturn JSON: { \"suggestions\": [\"suggestion1\", \"suggestion2\", ...] }","timestamp":"2026-02-23T08:48:31.150Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"suggestions\\\": [\\n    \\\"Define the game type (strategy, puzzle, adventure, etc.) to better align gameplay mechanics and objectives.\\\",\\n    \\\"Introduce behaviors or functions for the Red Castle, such as generating resources or deploying units, to add depth to the gameplay.\\\",\\n    \\\"Implement interactive elements for the Trees, like providing wood for castle upgrades or hiding spots for units, to enhance the game environment.\\\",\\n    \\\"Add movement or dynamic weather effects to the Clouds to create a more immersive and visually engaging game world.\\\",\\n    \\\"Introduce a progression system or levels to gradually increase the game's difficulty and keep players engaged.\\\",\\n    \\\"Incorporate a tutorial or guide to help new players understand the game's objectives and mechanics.\\\",\\n    \\\"Implement a reward system, such as unlocking new castle upgrades or abilities, to encourage continued play and progression.\\\"\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T08:48:31.151Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:48:45.958Z"}
+{"commandPreview":"A 3D dungeon crawler where a warrior fights skeletons and dragons, collects treasure chests and health potions in dark corridors","level":"info","message":"[AI][BACKEND] parse-command.request","timestamp":"2026-02-23T08:48:45.959Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] parseCommand mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:48:45.959Z"}
+{"level":"info","message":"Command parsed: A 3D dungeon crawler where a warrior fights skeletons and dragons, collects treasure chests and health potions in dark corridors -> generate_code","timestamp":"2026-02-23T08:48:49.249Z"}
+{"level":"info","message":"[AI][BACKEND] parse-command.response","resultPreview":"{\"action\":\"generate_code\",\"parameters\":{\"description\":\"A 3D dungeon crawler game featuring a warrior character who battles skeletons and dragons, collects treasure chests and health potions while navigating through dark corridors.\"},\"confidence\":0.95}","resultType":"object","timestamp":"2026-02-23T08:48:49.249Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:48:49.272Z"}
+{"descriptionPreview":"As a level designer, generate a complete 2D level layout as JSON. Include name, objects array (each with name, type, x, y, width, height, color, behaviors), background color, and tips.\n\nGame Type: generate_code\nDifficulty: medium\nTheme: A 3D dungeon crawler where a warrior fights skeletons and dragons, collects treasure chests and health potions in dark corridors\nDimensions: 402x494","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T08:48:49.274Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:48:49.274Z"}
+{"level":"info","message":"Code generated for: As a level designer, generate a complete 2D level layout as JSON. Include name, objects array (each with name, type, x, y, width, height, color, behaviors), background color, and tips.\n\nGame Type: generate_code\nDifficulty: medium\nTheme: A 3D dungeon crawler where a warrior fights skeletons and dragons, collects treasure chests and health potions in dark corridors\nDimensions: 402x494","timestamp":"2026-02-23T08:49:11.225Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"name\\\": \\\"Dungeon Crawler Level 1\\\",\\n  \\\"dimensions\\\": {\\n    \\\"width\\\": 402,\\n    \\\"height\\\": 494\\n  },\\n  \\\"background_color\\\": \\\"#000000\\\",\\n  \\\"objects\\\": [\\n    {\\n      \\\"name\\\": \\\"Player Start\\\",\\n      \\\"type\\\": \\\"spawn_point\\\",\\n      \\\"x\\\": 50,\\n      \\\"y\\\": 444,\\n      \\\"width\\\": 32,\\n      \\\"height\\\": 32,\\n      \\\"color\\\": \\\"#00FF00\\\",\\n      \\\"behaviors\\\": []\\n    },\\n    {\\n      \\\"name\\\": \\\"Treasure Chest 1\\\",\\n      \\\"type\\\": \\\"treasure\\\",\\n      \\\"x\\\": 150,\\n      \\\"y\\\": 200,\\n      \\\"width\\\": 32,\\n      \\\"height\\\": 32,\\n      \\\"color\\\": \\\"#FFD700\\\",\\n      \\\"behaviors\\\": [\\\"collectible\\\"]\\n    },\\n    {\\n      \\\"name\\\": \\\"Health Potion\\\",\\n      \\\"type\\\": \\\"health\\\",\\n      \\\"x\\\": 300,\\n      \\\"y\\\": 100,\\n      \\\"width\\\": 16,\\n      \\\"height\\\": 32,\\n      \\\"color\\\": \\\"#FF0000\\\",\\n      \\\"behaviors\\\": [\\\"collectible\\\", \\\"heal\\\"]\\n    },\\n    {\\n      \\\"name\\\": \\\"Skeleton Enemy\\\",\\n      \\\"type\\\": \\\"enemy\\\",\\n      \\\"x\\\": 200,\\n      \\\"y\\\": 300,\\n      \\\"width\\\": 24,\\n      \\\"height\\\": 32,\\n      \\\"color\\\": \\\"#FFFFFF\\\",\\n      \\\"behaviors\\\": [\\\"patrol\\\", \\\"attack\\\"]\\n    },\\n    {\\n      \\\"name\\\": \\\"Dragon Boss\\\",\\n      \\\"type\\\": \\\"boss\\\",\\n      \\\"x\\\": 100,\\n      \\\"y\\\": 50,\\n      \\\"width\\\": 96,\\n      \\\"height\\\": 64,\\n      \\\"color\\\": \\\"#FF4500\\\",\\n      \\\"behaviors\\\": [\\\"attack\\\", \\\"fly\\\", \\\"breath_fire\\\"]\\n    },\\n    {\\n      \\\"name\\\": \\\"Treasure Chest 2\\\",\\n      \\\"type\\\": \\\"treasure\\\",\\n      \\\"x\\\": 350,\\n      \\\"y\\\": 444,\\n      \\\"width\\\": 32,\\n      \\\"height\\\": 32,\\n      \\\"color\\\": \\\"#FFD700\\\",\\n      \\\"behaviors\\\": [\\\"collectible\\\"]\\n    },\\n    {\\n      \\\"name\\\": \\\"Wall\\\",\\n      \\\"type\\\": \\\"obstacle\\\",\\n      \\\"x\\\": 0,\\n      \\\"y\\\": 0,\\n      \\\"width\\\": 402,\\n      \\\"height\\\": 20,\\n      \\\"color\\\": \\\"#808080\\\",\\n      \\\"behaviors\\\": [\\\"block\\\"]\\n    },\\n    {\\n      \\\"name\\\": \\\"Wall\\\",\\n      \\\"type\\\": \\\"obstacle\\\",\\n      \\\"x\\\": 0,\\n      \\\"y\\\": 474,\\n      \\\"width\\\": 402,\\n      \\\"height\\\": 20,\\n      \\\"color\\\": \\\"#808080\\\",\\n      \\\"behaviors\\\": [\\\"block\\\"]\\n    },\\n    {\\n      \\\"name\\\": \\\"Wall\\\",\\n      \\\"type\\\": \\\"obstacle\\\",\\n      \\\"x\\\": 0,\\n      \\\"y\\\": 20,\\n      \\\"width\\\": 20,\\n      \\\"height\\\": 454,\\n      \\\"color\\\": \\\"#808080\\\",\\n      \\\"behaviors\\\": [\\\"block\\\"]\\n    },\\n    {\\n      \\\"name\\\": \\\"Wall\\\",\\n      \\\"type\\\": \\\"obstacle\\\",\\n      \\\"x\\\": 382,\\n      \\\"y\\\": 20,\\n      \\\"width\\\": 20,\\n      \\\"height\\\": 454,\\n      \\\"color\\\": \\\"#808080\\\",\\n      \\\"behaviors\\\": [\\\"block\\\"]\\n    }\\n  ],\\n  \\\"tips\\\": [\\n    \\\"Use the arrow keys to move.\\\",\\n    \\\"Avoid skeletons and the dragon.\\\",\\n    \\\"Collect treasure chests and health potions to survive.\\\"\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T08:49:11.226Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:49:11.253Z"}
+{"descriptionPreview":"As a game behavior designer, suggest behaviors for this object. Return JSON: { \"behaviors\": [{ \"type\": string, \"properties\": {}, \"description\": string }] }\n\nObject: Player Start\nRole: player\nGame Type: A 3D dungeon crawler where a warrior fights skeletons and dragons, collects treasure chests and health potions in dark corridors","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T08:49:11.254Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:49:11.254Z"}
+{"level":"info","message":"Code generated for: As a game behavior designer, suggest behaviors for this object. Return JSON: { \"behaviors\": [{ \"type\": string, \"properties\": {}, \"description\": string }] }\n\nObject: Player Start\nRole: player\nGame Type: A 3D dungeon crawler where a warrior fights skeletons and dragons, collects treasure chests and health potions in dark corridors","timestamp":"2026-02-23T08:49:22.427Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"behaviors\\\": [\\n    {\\n      \\\"type\\\": \\\"SpawnPoint\\\",\\n      \\\"properties\\\": {\\n        \\\"location\\\": \\\"SafeZone\\\",\\n        \\\"initialHealth\\\": 100,\\n        \\\"initialEquipment\\\": [\\\"Sword\\\", \\\"Shield\\\"]\\n      },\\n      \\\"description\\\": \\\"Defines where the player starts in the game with initial health and equipment.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"HealthRegeneration\\\",\\n      \\\"properties\\\": {\\n        \\\"rate\\\": 1,\\n        \\\"interval\\\": \\\"60 seconds\\\",\\n        \\\"inSafeZone\\\": true\\n      },\\n      \\\"description\\\": \\\"Player regenerates health over time when in a designated safe zone.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"Inventory\\\",\\n      \\\"properties\\\": {\\n        \\\"capacity\\\": 10,\\n        \\\"items\\\": [\\\"Health Potions\\\", \\\"Gold\\\", \\\"Keys\\\"]\\n      },\\n      \\\"description\\\": \\\"Determines what and how much the player can carry at game start.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ExperienceGain\\\",\\n      \\\"properties\\\": {\\n        \\\"onKill\\\": {\\n          \\\"Skeleton\\\": 10,\\n          \\\"Dragon\\\": 50\\n        },\\n        \\\"onTreasureCollection\\\": 20\\n      },\\n      \\\"description\\\": \\\"Defines how much experience the player gains for defeating enemies or collecting treasures.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"Respawn\\\",\\n      \\\"properties\\\": {\\n        \\\"cooldown\\\": \\\"5 minutes\\\",\\n        \\\"location\\\": \\\"LastCheckpoint\\\",\\n        \\\"healthPercentage\\\": 50\\n      },\\n      \\\"description\\\": \\\"Determines the behavior when the player dies, including respawn location and health.\\\"\\n    }\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T08:49:22.427Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:49:22.452Z"}
+{"descriptionPreview":"As a game design consultant, analyze this game and provide 5-7 actionable improvement suggestions as a JSON array of strings.\n\nGame: Dungeon Crawler Level 1\nType: unknown\nObjects:\nPlayer Start (no behaviors)\nTreasure Chest 1 (no behaviors)\nHealth Potion (no behaviors)\nSkeleton Enemy (no behaviors)\nDragon Boss (no behaviors)\nTreasure Chest 2 (no behaviors)\nWall (no behaviors)\nWall (no behaviors)\nWall (no behaviors)\nWall (no behaviors)\n\nReturn JSON: { \"suggestions\": [\"suggestion1\", \"suggestion2\", ...] }","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T08:49:22.456Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:49:22.456Z"}
+{"level":"info","message":"Code generated for: As a game design consultant, analyze this game and provide 5-7 actionable improvement suggestions as a JSON array of strings.\n\nGame: Dungeon Crawler Level 1\nType: unknown\nObjects:\nPlayer Start (no behaviors)\nTreasure Chest 1 (no behaviors)\nHealth Potion (no behaviors)\nSkeleton Enemy (no behaviors)\nDragon Boss (no behaviors)\nTreasure Chest 2 (no behaviors)\nWall (no behaviors)\nWall (no behaviors)\nWall (no behaviors)\nWall (no behaviors)\n\nReturn JSON: { \"suggestions\": [\"suggestion1\", \"suggestion2\", ...] }","timestamp":"2026-02-23T08:49:29.019Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"suggestions\\\": [\\n    \\\"Assign specific behaviors to all interactive objects (e.g., Treasure Chests can be opened, Health Potion can be consumed for health recovery).\\\",\\n    \\\"Implement AI for enemies (Skeleton and Dragon Boss) to attack the player and defend themselves, enhancing the challenge.\\\",\\n    \\\"Introduce a simple inventory system for the player to collect and use items found within the dungeon.\\\",\\n    \\\"Design a variety of wall textures and obstacles to create a visually interesting and less monotonous environment.\\\",\\n    \\\"Incorporate puzzles or traps that the player must navigate or solve to progress, adding depth to gameplay.\\\",\\n    \\\"Add a leveling or skill system to allow the player to grow stronger and access new abilities as they defeat enemies.\\\",\\n    \\\"Include ambient sounds and music to enhance the atmosphere and immersion within the dungeon environment.\\\"\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T08:49:29.019Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T08:52:37.433Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T08:52:39.020Z"}
+{"commandPreview":"A top-down racing game where a car dodges traffic, collects fuel, and avoids oil spills","level":"info","message":"[AI][BACKEND] parse-command.request","timestamp":"2026-02-23T08:52:39.022Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] parseCommand mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:52:39.022Z"}
+{"level":"info","message":"Command parsed: A top-down racing game where a car dodges traffic, collects fuel, and avoids oil spills -> create_scene","timestamp":"2026-02-23T08:52:41.466Z"}
+{"level":"info","message":"[AI][BACKEND] parse-command.response","resultPreview":"{\"action\":\"create_scene\",\"parameters\":{\"name\":\"MainGame\",\"background_color\":\"asphalt\",\"type\":\"2D\"},\"confidence\":0.95}","resultType":"object","timestamp":"2026-02-23T08:52:41.466Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:52:41.499Z"}
+{"descriptionPreview":"As a level designer, generate a complete 2D level layout as JSON. Include name, objects array (each with name, type, x, y, width, height, color, behaviors), background color, and tips.\n\nGame Type: create_scene\nDifficulty: medium\nTheme: A top-down racing game where a car dodges traffic, collects fuel, and avoids oil spills\nDimensions: 402x494","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T08:52:41.501Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:52:41.501Z"}
+{"level":"info","message":"Code generated for: As a level designer, generate a complete 2D level layout as JSON. Include name, objects array (each with name, type, x, y, width, height, color, behaviors), background color, and tips.\n\nGame Type: create_scene\nDifficulty: medium\nTheme: A top-down racing game where a car dodges traffic, collects fuel, and avoids oil spills\nDimensions: 402x494","timestamp":"2026-02-23T08:52:55.392Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"name\\\": \\\"Highway Hustle\\\",\\n  \\\"dimensions\\\": {\\n    \\\"width\\\": 402,\\n    \\\"height\\\": 494\\n  },\\n  \\\"background_color\\\": \\\"#87CEEB\\\",\\n  \\\"objects\\\": [\\n    {\\n      \\\"name\\\": \\\"PlayerCar\\\",\\n      \\\"type\\\": \\\"player\\\",\\n      \\\"x\\\": 201,\\n      \\\"y\\\": 444,\\n      \\\"width\\\": 32,\\n      \\\"height\\\": 64,\\n      \\\"color\\\": \\\"#FF0000\\\",\\n      \\\"behaviors\\\": [\\n        {\\n          \\\"name\\\": \\\"MoveWithArrowKeys\\\",\\n          \\\"speed\\\": 5\\n        }\\n      ]\\n    },\\n    {\\n      \\\"name\\\": \\\"FuelCanister1\\\",\\n      \\\"type\\\": \\\"collectible\\\",\\n      \\\"x\\\": 100,\\n      \\\"y\\\": 100,\\n      \\\"width\\\": 16,\\n      \\\"height\\\": 32,\\n      \\\"color\\\": \\\"#FFFF00\\\",\\n      \\\"behaviors\\\": [\\n        {\\n          \\\"name\\\": \\\"IncreaseFuel\\\",\\n          \\\"amount\\\": 10\\n        }\\n      ]\\n    },\\n    {\\n      \\\"name\\\": \\\"OilSpill1\\\",\\n      \\\"type\\\": \\\"hazard\\\",\\n      \\\"x\\\": 300,\\n      \\\"y\\\": 200,\\n      \\\"width\\\": 64,\\n      \\\"height\\\": 32,\\n      \\\"color\\\": \\\"#708090\\\",\\n      \\\"behaviors\\\": [\\n        {\\n          \\\"name\\\": \\\"ReduceControl\\\",\\n          \\\"duration\\\": 3\\n        }\\n      ]\\n    },\\n    {\\n      \\\"name\\\": \\\"TrafficCar1\\\",\\n      \\\"type\\\": \\\"obstacle\\\",\\n      \\\"x\\\": 150,\\n      \\\"y\\\": 50,\\n      \\\"width\\\": 32,\\n      \\\"height\\\": 64,\\n      \\\"color\\\": \\\"#808080\\\",\\n      \\\"behaviors\\\": [\\n        {\\n          \\\"name\\\": \\\"MoveDown\\\",\\n          \\\"speed\\\": 2\\n        }\\n      ]\\n    },\\n    {\\n      \\\"name\\\": \\\"TrafficCar2\\\",\\n      \\\"type\\\": \\\"obstacle\\\",\\n      \\\"x\\\": 250,\\n      \\\"y\\\": 150,\\n      \\\"width\\\": 32,\\n      \\\"height\\\": 64,\\n      \\\"color\\\": \\\"#808080\\\",\\n      \\\"behaviors\\\": [\\n        {\\n          \\\"name\\\": \\\"MoveDown\\\",\\n          \\\"speed\\\": 3\\n        }\\n      ]\\n    }\\n  ],\\n  \\\"tips\\\": [\\n    \\\"Use arrow keys to dodge traffic and collect fuel.\\\",\\n    \\\"Avoid oil spills to maintain control of your car.\\\",\\n    \\\"Collect fuel canisters to keep your car running.\\\"\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T08:52:55.393Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:52:55.419Z"}
+{"descriptionPreview":"As a game behavior designer, suggest behaviors for this object. Return JSON: { \"behaviors\": [{ \"type\": string, \"properties\": {}, \"description\": string }] }\n\nObject: PlayerCar\nRole: player\nGame Type: A top-down racing game where a car dodges traffic, collects fuel, and avoids oil spills","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T08:52:55.424Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:52:55.424Z"}
+{"level":"info","message":"Code generated for: As a game behavior designer, suggest behaviors for this object. Return JSON: { \"behaviors\": [{ \"type\": string, \"properties\": {}, \"description\": string }] }\n\nObject: PlayerCar\nRole: player\nGame Type: A top-down racing game where a car dodges traffic, collects fuel, and avoids oil spills","timestamp":"2026-02-23T08:53:04.042Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"behaviors\\\": [\\n    {\\n      \\\"type\\\": \\\"Movement\\\",\\n      \\\"properties\\\": {\\n        \\\"speed\\\": \\\"variable\\\",\\n        \\\"direction\\\": \\\"4-directional (up, down, left, right)\\\"\\n      },\\n      \\\"description\\\": \\\"Allows the player to control the car's speed and direction to navigate through traffic.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"FuelCollection\\\",\\n      \\\"properties\\\": {\\n        \\\"fuelGain\\\": \\\"fixed amount\\\",\\n        \\\"collisionRequired\\\": true\\n      },\\n      \\\"description\\\": \\\"The car collects fuel canisters to maintain its fuel level, allowing continued play.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"OilSpillAvoidance\\\",\\n      \\\"properties\\\": {\\n        \\\"speedReduction\\\": \\\"percentage\\\",\\n        \\\"controlImpairmentDuration\\\": \\\"fixed time\\\"\\n      },\\n      \\\"description\\\": \\\"Interacting with oil spills reduces speed temporarily and impairs control, challenging the player's ability to dodge traffic.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ScoreIncrement\\\",\\n      \\\"properties\\\": {\\n        \\\"onFuelCollection\\\": \\\"fixed points\\\",\\n        \\\"onDistanceCovered\\\": \\\"points per unit distance\\\"\\n      },\\n      \\\"description\\\": \\\"Increases the player's score based on distance covered and fuel collected, promoting exploration and risk-taking.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"CollisionDetection\\\",\\n      \\\"properties\\\": {\\n        \\\"withTraffic\\\": \\\"game over or damage\\\",\\n        \\\"withBoundaries\\\": \\\"bounce back or stop\\\"\\n      },\\n      \\\"description\\\": \\\"Detects collisions with traffic or boundaries, leading to game over or a temporary setback, adding challenge and requiring skillful navigation.\\\"\\n    }\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T08:53:04.043Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T08:53:04.064Z"}
+{"descriptionPreview":"As a game design consultant, analyze this game and provide 5-7 actionable improvement suggestions as a JSON array of strings.\n\nGame: Highway Hustle\nType: unknown\nObjects:\nPlayerCar (no behaviors)\nFuelCanister1 (no behaviors)\nOilSpill1 (no behaviors)\nTrafficCar1 (no behaviors)\nTrafficCar2 (no behaviors)\n\nReturn JSON: { \"suggestions\": [\"suggestion1\", \"suggestion2\", ...] }","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T08:53:04.066Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:53:04.066Z"}
+{"level":"info","message":"Code generated for: As a game design consultant, analyze this game and provide 5-7 actionable improvement suggestions as a JSON array of strings.\n\nGame: Highway Hustle\nType: unknown\nObjects:\nPlayerCar (no behaviors)\nFuelCanister1 (no behaviors)\nOilSpill1 (no behaviors)\nTrafficCar1 (no behaviors)\nTrafficCar2 (no behaviors)\n\nReturn JSON: { \"suggestions\": [\"suggestion1\", \"suggestion2\", ...] }","timestamp":"2026-02-23T08:53:11.833Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"suggestions\\\": [\\n    \\\"Assign specific behaviors to PlayerCar, such as accelerate, decelerate, and lane change, to enhance player control and engagement.\\\",\\n    \\\"Introduce a fuel depletion mechanic for the PlayerCar, making FuelCanister1 pickups crucial for continued gameplay.\\\",\\n    \\\"Implement a slipping effect for the OilSpill1, causing the PlayerCar to temporarily lose control, adding challenge and variety.\\\",\\n    \\\"Give TrafficCar1 and TrafficCar2 different speeds and movement patterns, creating dynamic obstacles for the player to navigate.\\\",\\n    \\\"Incorporate a scoring system based on distance traveled and number of FuelCanisters collected to motivate players to improve.\\\",\\n    \\\"Add power-ups or special abilities, such as temporary invincibility or speed boosts, to increase gameplay excitement and strategy.\\\",\\n    \\\"Introduce a variety of environments or levels with increasing difficulty to maintain player interest over time.\\\"\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T08:53:11.834Z","userId":"699163555bd776c091656850"}

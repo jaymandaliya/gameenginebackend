@@ -1,0 +1,132 @@
+{
+  "info": {
+    "name": "Complete 2D/3D Game Engine with AI",
+    "description": "Complete API collection with AI integration - 40+ endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:3000/api/v1"},
+    {"key": "token", "value": ""},
+    {"key": "projectId", "value": ""},
+    {"key": "sceneId", "value": ""}
+  ],
+  "item": [
+    {
+      "name": "🤖 AI Services",
+      "item": [
+        {
+          "name": "AI Status",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/ai/status"
+          }
+        },
+        {
+          "name": "Parse Command",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"command\": \"Create a player character at position 100, 200\"}"
+            },
+            "url": "{{baseUrl}}/ai/parse-command"
+          }
+        },
+        {
+          "name": "Generate Sprite",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"prompt\": \"medieval knight character\", \"style\": \"pixel-art\"}"
+            },
+            "url": "{{baseUrl}}/ai/generate-sprite"
+          }
+        },
+        {
+          "name": "Generate 3D Model",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"description\": \"fantasy castle tower\"}"
+            },
+            "url": "{{baseUrl}}/ai/generate-3d-model"
+          }
+        },
+        {
+          "name": "Generate Code",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"description\": \"player movement with WASD keys\", \"language\": \"javascript\"}"
+            },
+            "url": "{{baseUrl}}/ai/generate-code"
+          }
+        },
+        {
+          "name": "Generate Dialogue",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"character\": {\"name\": \"Wizard\", \"personality\": \"wise and mysterious\"}, \"context\": \"greeting the player\"}"
+            },
+            "url": "{{baseUrl}}/ai/generate-dialogue"
+          }
+        },
+        {
+          "name": "Enhance Prompt",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"prompt\": \"dragon\", \"type\": \"image\"}"
+            },
+            "url": "{{baseUrl}}/ai/enhance-prompt"
+          }
+        },
+        {
+          "name": "Generate Texture",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"description\": \"stone brick wall\", \"seamless\": true}"
+            },
+            "url": "{{baseUrl}}/ai/generate-texture"
+          }
+        }
+      ]
+    }
+  ]
+}
