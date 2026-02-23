@@ -7,16 +7,26 @@ const replicate = process.env.REPLICATE_API_TOKEN ? new Replicate({
 
 const isMockMode = process.env.MOCK_AI_MODE === 'true' || !process.env.REPLICATE_API_TOKEN;
 
+const toErrorDetails = (error) => {
+  if (!error) return 'unknown error';
+  if (typeof error === 'string') return error;
+  const message = error.message || error.toString?.() || 'unknown error';
+  let details = '';
+  if (error.response?.data) {
+    try {
+      details = JSON.stringify(error.response.data);
+    } catch {
+      details = String(error.response.data);
+    }
+  }
+  return details ? `${message} | response=${details}` : message;
+};
+
 // Generate sprite using Stable Diffusion
 export const generateSprite = async (prompt, style = 'pixel-art') => {
   try {
     if (isMockMode) {
-      return {
-        url: `https://placehold.co/512x512/png?text=Sprite:${encodeURIComponent(prompt.substring(0, 20))}`,
-        prompt,
-        style,
-        model: 'mock'
-      };
+      throw new Error('Replicate is not configured. Set REPLICATE_API_TOKEN for real sprite generation.');
     }
 
     const output = await replicate.run(
@@ -40,7 +50,7 @@ export const generateSprite = async (prompt, style = 'pixel-art') => {
       model: 'sdxl'
     };
   } catch (error) {
-    logger.error('Replicate sprite generation error:', error.message);
+    logger.error(`Replicate sprite generation error: ${toErrorDetails(error)}`);
     throw new Error('Failed to generate sprite');
   }
 };
@@ -49,11 +59,7 @@ export const generateSprite = async (prompt, style = 'pixel-art') => {
 export const generate3DModelPreview = async (description) => {
   try {
     if (isMockMode) {
-      return {
-        url: `https://placehold.co/1024x1024/png?text=3D:${encodeURIComponent(description.substring(0, 20))}`,
-        description,
-        model: 'mock'
-      };
+      throw new Error('Replicate is not configured. Set REPLICATE_API_TOKEN for real 3D preview generation.');
     }
 
     const output = await replicate.run(
@@ -76,7 +82,7 @@ export const generate3DModelPreview = async (description) => {
       model: 'sdxl-3d'
     };
   } catch (error) {
-    logger.error('Replicate 3D generation error:', error.message);
+    logger.error(`Replicate 3D generation error: ${toErrorDetails(error)}`);
     throw new Error('Failed to generate 3D preview');
   }
 };
@@ -85,11 +91,7 @@ export const generate3DModelPreview = async (description) => {
 export const upscaleImage = async (imageUrl) => {
   try {
     if (isMockMode) {
-      return {
-        url: imageUrl,
-        scale: 2,
-        model: 'mock'
-      };
+      throw new Error('Replicate is not configured. Set REPLICATE_API_TOKEN for real image upscaling.');
     }
 
     const output = await replicate.run(
@@ -110,7 +112,7 @@ export const upscaleImage = async (imageUrl) => {
       model: 'real-esrgan'
     };
   } catch (error) {
-    logger.error('Replicate upscale error:', error.message);
+    logger.error(`Replicate upscale error: ${toErrorDetails(error)}`);
     throw new Error('Failed to upscale image');
   }
 };
@@ -119,10 +121,7 @@ export const upscaleImage = async (imageUrl) => {
 export const removeBackground = async (imageUrl) => {
   try {
     if (isMockMode) {
-      return {
-        url: imageUrl,
-        model: 'mock'
-      };
+      throw new Error('Replicate is not configured. Set REPLICATE_API_TOKEN for real background removal.');
     }
 
     const output = await replicate.run(
@@ -140,7 +139,7 @@ export const removeBackground = async (imageUrl) => {
       model: 'rembg'
     };
   } catch (error) {
-    logger.error('Replicate background removal error:', error.message);
+    logger.error(`Replicate background removal error: ${toErrorDetails(error)}`);
     throw new Error('Failed to remove background');
   }
 };
@@ -149,12 +148,7 @@ export const removeBackground = async (imageUrl) => {
 export const generateTexture = async (description, seamless = true) => {
   try {
     if (isMockMode) {
-      return {
-        url: `https://placehold.co/512x512/png?text=Texture:${encodeURIComponent(description.substring(0, 20))}`,
-        description,
-        seamless,
-        model: 'mock'
-      };
+      throw new Error('Replicate is not configured. Set REPLICATE_API_TOKEN for real texture generation.');
     }
 
     const seamlessPrompt = seamless ? ', seamless tileable pattern' : '';
@@ -179,7 +173,7 @@ export const generateTexture = async (description, seamless = true) => {
       model: 'sdxl'
     };
   } catch (error) {
-    logger.error('Replicate texture generation error:', error.message);
+    logger.error(`Replicate texture generation error: ${toErrorDetails(error)}`);
     throw new Error('Failed to generate texture');
   }
 };

@@ -371,3 +371,327 @@
 {"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T08:53:04.066Z"}
 {"level":"info","message":"Code generated for: As a game design consultant, analyze this game and provide 5-7 actionable improvement suggestions as a JSON array of strings.\n\nGame: Highway Hustle\nType: unknown\nObjects:\nPlayerCar (no behaviors)\nFuelCanister1 (no behaviors)\nOilSpill1 (no behaviors)\nTrafficCar1 (no behaviors)\nTrafficCar2 (no behaviors)\n\nReturn JSON: { \"suggestions\": [\"suggestion1\", \"suggestion2\", ...] }","timestamp":"2026-02-23T08:53:11.833Z"}
 {"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"suggestions\\\": [\\n    \\\"Assign specific behaviors to PlayerCar, such as accelerate, decelerate, and lane change, to enhance player control and engagement.\\\",\\n    \\\"Introduce a fuel depletion mechanic for the PlayerCar, making FuelCanister1 pickups crucial for continued gameplay.\\\",\\n    \\\"Implement a slipping effect for the OilSpill1, causing the PlayerCar to temporarily lose control, adding challenge and variety.\\\",\\n    \\\"Give TrafficCar1 and TrafficCar2 different speeds and movement patterns, creating dynamic obstacles for the player to navigate.\\\",\\n    \\\"Incorporate a scoring system based on distance traveled and number of FuelCanisters collected to motivate players to improve.\\\",\\n    \\\"Add power-ups or special abilities, such as temporary invincibility or speed boosts, to increase gameplay excitement and strategy.\\\",\\n    \\\"Introduce a variety of environments or levels with increasing difficulty to maintain player interest over time.\\\"\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T08:53:11.834Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:19:29.490Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:19:29.496Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:19:40.286Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:19:40.289Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:19:58.404Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:19:58.407Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:20:02.021Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:20:02.026Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:20:09.975Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:20:09.980Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:20:14.524Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:20:14.530Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:20:23.627Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:20:23.632Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:20:39.865Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:20:39.869Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:20:51.247Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:20:51.253Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:21:07.908Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:21:07.913Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:21:34.337Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:21:34.343Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:21:44.152Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:22:09.125Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:22:09.128Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:22:12.507Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:22:12.514Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:22:24.766Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:22:24.769Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T09:23:01.172Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:23:39.236Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:23:39.239Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:26:05.780Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:26:05.786Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:26:07.857Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:26:07.860Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T09:26:11.599Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T09:26:11.606Z"}
+{"level":"info","message":"POST /api/v1/auth/register","timestamp":"2026-02-23T09:26:59.646Z"}
+{"level":"info","message":"User registered: phase3_1771838819@test.com","timestamp":"2026-02-23T09:27:00.100Z"}
+{"level":"info","message":"GET /api/v1/engine/netcode/config","timestamp":"2026-02-23T09:27:00.138Z"}
+{"level":"info","message":"POST /api/v1/engine/procedural/map","timestamp":"2026-02-23T09:27:00.148Z"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T09:27:00.149Z"}
+{"level":"info","message":"Code generated for: Generate procedural map JSON with heightmap[][], objectPlacements[], spawnPoints[] for genre=action, theme=forest, size=medium, difficulty=normal","timestamp":"2026-02-23T09:27:10.953Z"}
+{"level":"info","message":"POST /api/v1/multiplayer","timestamp":"2026-02-23T09:27:10.969Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T10:13:03.709Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T10:13:04.127Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:13:39.253Z"}
+{"level":"info","message":"POST /api/v1/ai/parse-command","timestamp":"2026-02-23T10:13:41.128Z"}
+{"commandPreview":"Create a player character sprite","level":"info","message":"[AI][BACKEND] parse-command.request","timestamp":"2026-02-23T10:13:41.131Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] parseCommand mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:13:41.131Z"}
+{"level":"info","message":"Command parsed: Create a player character sprite -> create_object","timestamp":"2026-02-23T10:13:44.436Z"}
+{"level":"info","message":"[AI][BACKEND] parse-command.response","resultPreview":"{\"action\":\"create_object\",\"parameters\":{\"type\":\"sprite\",\"name\":\"player_character\"},\"confidence\":1}","resultType":"object","timestamp":"2026-02-23T10:13:44.436Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T10:13:44.456Z"}
+{"descriptionPreview":"As a level designer, generate a complete 2D level layout as JSON. Include name, objects array (each with name, type, x, y, width, height, color, behaviors), background color, and tips.\n\nGame Type: create_object\nDifficulty: medium\nTheme: Create a player character sprite\nDimensions: 402x494","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T10:13:44.457Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:13:44.458Z"}
+{"level":"info","message":"Code generated for: As a level designer, generate a complete 2D level layout as JSON. Include name, objects array (each with name, type, x, y, width, height, color, behaviors), background color, and tips.\n\nGame Type: create_object\nDifficulty: medium\nTheme: Create a player character sprite\nDimensions: 402x494","timestamp":"2026-02-23T10:13:56.219Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"name\\\": \\\"Sprite Creation Lab\\\",\\n  \\\"dimensions\\\": {\\n    \\\"width\\\": 402,\\n    \\\"height\\\": 494\\n  },\\n  \\\"background_color\\\": \\\"#8EC0E4\\\",\\n  \\\"objects\\\": [\\n    {\\n      \\\"name\\\": \\\"Palette\\\",\\n      \\\"type\\\": \\\"interactive\\\",\\n      \\\"x\\\": 10,\\n      \\\"y\\\": 10,\\n      \\\"width\\\": 100,\\n      \\\"height\\\": 474,\\n      \\\"color\\\": \\\"#F0E68C\\\",\\n      \\\"behaviors\\\": [\\n        \\\"select_color\\\"\\n      ]\\n    },\\n    {\\n      \\\"name\\\": \\\"Canvas\\\",\\n      \\\"type\\\": \\\"interactive\\\",\\n      \\\"x\\\": 120,\\n      \\\"y\\\": 10,\\n      \\\"width\\\": 272,\\n      \\\"height\\\": 474,\\n      \\\"color\\\": \\\"#FFFFFF\\\",\\n      \\\"behaviors\\\": [\\n        \\\"draw_pixel\\\"\\n      ]\\n    },\\n    {\\n      \\\"name\\\": \\\"SaveButton\\\",\\n      \\\"type\\\": \\\"button\\\",\\n      \\\"x\\\": 10,\\n      \\\"y\\\": 450,\\n      \\\"width\\\": 100,\\n      \\\"height\\\": 34,\\n      \\\"color\\\": \\\"#00FF00\\\",\\n      \\\"behaviors\\\": [\\n        \\\"save_creation\\\"\\n      ]\\n    }\\n  ],\\n  \\\"tips\\\": [\\n    \\\"Use the palette to select a color before drawing on the canvas.\\\",\\n    \\\"Save your character sprite to use it in your game projects.\\\",\\n    \\\"Experiment with different colors and shapes to create unique characters.\\\"\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T10:13:56.220Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T10:13:56.242Z"}
+{"descriptionPreview":"As a game behavior designer, suggest behaviors for this object. Return JSON: { \"behaviors\": [{ \"type\": string, \"properties\": {}, \"description\": string }] }\n\nObject: Palette\nRole: player\nGame Type: Create a player character sprite","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T10:13:56.243Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:13:56.243Z"}
+{"level":"info","message":"Code generated for: As a game behavior designer, suggest behaviors for this object. Return JSON: { \"behaviors\": [{ \"type\": string, \"properties\": {}, \"description\": string }] }\n\nObject: Palette\nRole: player\nGame Type: Create a player character sprite","timestamp":"2026-02-23T10:14:07.043Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"behaviors\\\": [\\n    {\\n      \\\"type\\\": \\\"ColorSelection\\\",\\n      \\\"properties\\\": {\\n        \\\"availableColors\\\": [\\\"#FFFFFF\\\", \\\"#000000\\\", \\\"#FF0000\\\", \\\"#00FF00\\\", \\\"#0000FF\\\", \\\"#FFFF00\\\", \\\"#FF00FF\\\", \\\"#00FFFF\\\"],\\n        \\\"defaultColor\\\": \\\"#FFFFFF\\\"\\n      },\\n      \\\"description\\\": \\\"Allows the player to select a color from the available palette for character customization.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ApplyColor\\\",\\n      \\\"properties\\\": {\\n        \\\"targetParts\\\": [\\\"hair\\\", \\\"skin\\\", \\\"clothes\\\", \\\"accessories\\\"],\\n        \\\"applyMethod\\\": \\\"click\\\"\\n      },\\n      \\\"description\\\": \\\"Enables the player to apply the selected color to different parts of the character sprite.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"SaveCustomization\\\",\\n      \\\"properties\\\": {\\n        \\\"storageMethod\\\": \\\"local\\\",\\n        \\\"format\\\": \\\"JSON\\\"\\n      },\\n      \\\"description\\\": \\\"Saves the player's character customization choices locally, allowing for retrieval and modification in future sessions.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ResetCustomization\\\",\\n      \\\"properties\\\": {},\\n      \\\"description\\\": \\\"Provides an option to reset the character sprite to default settings, clearing all customizations made by the player.\\\"\\n    }\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T10:14:07.044Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T10:14:07.055Z"}
+{"descriptionPreview":"As a game design consultant, analyze this game and provide 5-7 actionable improvement suggestions as a JSON array of strings.\n\nGame: Sprite Creation Lab\nType: unknown\nObjects:\nPalette (no behaviors)\nCanvas (no behaviors)\nSaveButton (no behaviors)\n\nReturn JSON: { \"suggestions\": [\"suggestion1\", \"suggestion2\", ...] }","language":"json","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T10:14:07.055Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:14:07.055Z"}
+{"level":"info","message":"Code generated for: As a game design consultant, analyze this game and provide 5-7 actionable improvement suggestions as a JSON array of strings.\n\nGame: Sprite Creation Lab\nType: unknown\nObjects:\nPalette (no behaviors)\nCanvas (no behaviors)\nSaveButton (no behaviors)\n\nReturn JSON: { \"suggestions\": [\"suggestion1\", \"suggestion2\", ...] }","timestamp":"2026-02-23T10:14:14.072Z"}
+{"language":"json","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"{\\n  \\\"suggestions\\\": [\\n    \\\"Introduce interactive tutorials to guide users through the sprite creation process, enhancing user engagement and understanding.\\\",\\n    \\\"Implement a 'drag and drop' feature for the Palette onto the Canvas, making the sprite creation process more intuitive and user-friendly.\\\",\\n    \\\"Add undo and redo buttons to allow users to easily correct mistakes or experiment with different designs without starting over.\\\",\\n    \\\"Incorporate a preview feature that enables users to see their sprite in various simulated environments or contexts, aiding in the design process.\\\",\\n    \\\"Expand the Palette with customizable color options and the ability to create and save custom color palettes for future projects.\\\",\\n    \\\"Integrate social sharing options, allowing users to share their creations directly from the SaveButton to social media or within a community gallery.\\\",\\n    \\\"Develop a feedback system where users can submit their creations for community voting or expert review, fostering a sense of community and improvement.\\\"\\n  ]\\n}\",\"language\":\"json\",\"explanation\":\"Generated JSON response based on description\"}","resultType":"object","timestamp":"2026-02-23T10:14:14.072Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T10:14:43.323Z"}
+{"level":"info","message":"GET /api/v1/scenes","timestamp":"2026-02-23T10:14:43.934Z"}
+{"level":"info","message":"GET /api/v1/objects","timestamp":"2026-02-23T10:14:44.791Z"}
+{"level":"info","message":"GET /api/v1/prefabs","timestamp":"2026-02-23T10:14:44.794Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-23T10:14:49.270Z"}
+{"level":"info","message":"POST /api/v1/objects","timestamp":"2026-02-23T10:14:53.078Z"}
+{"level":"info","message":"GameObject created: 699c289da556c27fab1fa85f","timestamp":"2026-02-23T10:14:53.219Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-23T10:23:16.503Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:34:41.394Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:34:41.397Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:34:48.424Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:34:48.429Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:34:51.757Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:34:51.765Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:37:17.145Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:37:17.150Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:39:05.426Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:39:05.430Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:40:17.972Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:40:17.976Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:40:42.054Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:40:42.059Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-23T10:41:02.417Z"}
+{"level":"info","message":"GET /health","timestamp":"2026-02-23T10:41:04.323Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T10:41:05.030Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T10:41:05.146Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:41:09.575Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-23T10:41:16.317Z"}
+{"level":"info","message":"POST /api/v1/auth/register","timestamp":"2026-02-23T10:41:25.070Z"}
+{"level":"info","message":"User registered: phase3_1771843285@test.com","timestamp":"2026-02-23T10:41:25.236Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-23T10:41:38.772Z"}
+{"level":"info","message":"GET /api/v1/ai/voices","timestamp":"2026-02-23T10:41:39.215Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-voice","timestamp":"2026-02-23T10:41:39.223Z"}
+{"level":"info","message":"[AI][SERVICE] generateVoiceLine mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:41:39.224Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-music","timestamp":"2026-02-23T10:41:41.895Z"}
+{"level":"info","message":"[AI][SERVICE] generateMusicTrack mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:41:41.897Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:41:43.936Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:41:44.425Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sfx","timestamp":"2026-02-23T10:41:45.524Z"}
+{"level":"info","message":"[AI][SERVICE] generateSfxClip mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:41:45.525Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T10:41:48.120Z"}
+{"level":"error","message":"Replicate sprite generation error:","timestamp":"2026-02-23T10:41:48.122Z"}
+{"level":"error","message":"Error: Failed to generate sprite","stack":"Error: Failed to generate sprite\n    at Module.generateSprite (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/services/replicate.service.js:39:11)\n    at generateSprite (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/controllers/ai.controller.js:75:43)\n    at Layer.handle [as handle_request] (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/index.js:280:10)\n    at file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express-rate-limit/dist/index.mjs:779:7","timestamp":"2026-02-23T10:41:48.122Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-voice","timestamp":"2026-02-23T10:42:08.657Z"}
+{"level":"info","message":"[AI][SERVICE] generateVoiceLine mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:42:08.658Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-music","timestamp":"2026-02-23T10:42:15.143Z"}
+{"level":"info","message":"[AI][SERVICE] generateMusicTrack mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:42:15.144Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sfx","timestamp":"2026-02-23T10:42:18.285Z"}
+{"level":"info","message":"[AI][SERVICE] generateSfxClip mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:42:18.286Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:42:40.508Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:42:40.531Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:42:40.940Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-23T10:43:10.170Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T10:43:32.437Z"}
+{"level":"error","message":"Replicate sprite generation error:","timestamp":"2026-02-23T10:43:32.438Z"}
+{"level":"error","message":"Error: Failed to generate sprite","stack":"Error: Failed to generate sprite\n    at Module.generateSprite (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/services/replicate.service.js:39:11)\n    at generateSprite (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/controllers/ai.controller.js:75:43)\n    at Layer.handle [as handle_request] (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/index.js:280:10)\n    at file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express-rate-limit/dist/index.mjs:779:7","timestamp":"2026-02-23T10:43:32.438Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-3d-model","timestamp":"2026-02-23T10:43:32.445Z"}
+{"level":"error","message":"Replicate 3D generation error:","timestamp":"2026-02-23T10:43:32.446Z"}
+{"level":"error","message":"Error: Failed to generate 3D preview","stack":"Error: Failed to generate 3D preview\n    at Module.generate3DModelPreview (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/services/replicate.service.js:71:11)\n    at generate3DModel (file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/src/controllers/ai.controller.js:98:43)\n    at Layer.handle [as handle_request] (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express/lib/router/index.js:280:10)\n    at file:///Users/jaymandaliya/Documents/2025/Projects/hmInnovance/complete-ai-game-engine/backend/node_modules/express-rate-limit/dist/index.mjs:779:7","timestamp":"2026-02-23T10:43:32.446Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-image","timestamp":"2026-02-23T10:43:32.453Z"}
+{"level":"info","message":"[AI][SERVICE] generateImage mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:43:32.454Z"}
+{"level":"info","message":"Image generated: fantasy forest background","timestamp":"2026-02-23T10:43:50.415Z"}
+{"level":"info","message":"GET /api/v1/ai/status","timestamp":"2026-02-23T10:43:59.531Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:44:49.375Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:44:49.379Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:44:51.295Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:44:51.297Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:44:59.857Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:44:59.864Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T10:45:08.322Z"}
+{"level":"error","message":"Replicate sprite generation error: Replicate is not configured. Set REPLICATE_API_TOKEN for real sprite generation.","timestamp":"2026-02-23T10:45:08.324Z"}
+{"error":"Failed to generate sprite","level":"warn","message":"[AI][BACKEND] Replicate sprite failed, falling back to OpenAI image generation","timestamp":"2026-02-23T10:45:08.324Z"}
+{"level":"info","message":"[AI][SERVICE] generateImage mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:45:08.324Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:45:21.310Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:45:21.313Z"}
+{"level":"info","message":"GET /health","timestamp":"2026-02-23T10:45:27.691Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T10:45:35.364Z"}
+{"level":"error","message":"Replicate sprite generation error: Replicate is not configured. Set REPLICATE_API_TOKEN for real sprite generation.","timestamp":"2026-02-23T10:45:35.365Z"}
+{"error":"Failed to generate sprite","level":"warn","message":"[AI][BACKEND] Replicate sprite failed, falling back to OpenAI image generation","timestamp":"2026-02-23T10:45:35.365Z"}
+{"level":"info","message":"[AI][SERVICE] generateImage mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:45:35.365Z"}
+{"level":"info","message":"Image generated: pixel warrior hero idle, pixel-art, game sprite, transparent background, clean edges","timestamp":"2026-02-23T10:45:51.436Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-3d-model","timestamp":"2026-02-23T10:45:59.666Z"}
+{"level":"error","message":"Replicate 3D generation error: Replicate is not configured. Set REPLICATE_API_TOKEN for real 3D preview generation.","timestamp":"2026-02-23T10:45:59.667Z"}
+{"error":"Failed to generate 3D preview","level":"warn","message":"[AI][BACKEND] Replicate 3D preview failed, falling back to OpenAI image generation","timestamp":"2026-02-23T10:45:59.667Z"}
+{"level":"info","message":"[AI][SERVICE] generateImage mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:45:59.668Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:46:06.961Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:46:06.982Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T10:46:11.225Z"}
+{"level":"error","message":"Replicate sprite generation error: Replicate is not configured. Set REPLICATE_API_TOKEN for real sprite generation.","timestamp":"2026-02-23T10:46:11.226Z"}
+{"error":"Failed to generate sprite","level":"warn","message":"[AI][BACKEND] Replicate sprite failed, falling back to OpenAI image generation","timestamp":"2026-02-23T10:46:11.227Z"}
+{"level":"info","message":"[AI][SERVICE] generateImage mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:46:11.227Z"}
+{"level":"info","message":"Image generated: stylized sci-fi crate, 3D render, isometric view, game asset, clean background","timestamp":"2026-02-23T10:46:12.905Z"}
+{"level":"info","message":"Image generated: Create a player character sprite, pixel, game sprite, transparent background, clean edges","timestamp":"2026-02-23T10:46:24.276Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T10:46:24.287Z"}
+{"level":"error","message":"Replicate sprite generation error: Replicate is not configured. Set REPLICATE_API_TOKEN for real sprite generation.","timestamp":"2026-02-23T10:46:24.289Z"}
+{"error":"Failed to generate sprite","level":"warn","message":"[AI][BACKEND] Replicate sprite failed, falling back to OpenAI image generation","timestamp":"2026-02-23T10:46:24.290Z"}
+{"level":"info","message":"[AI][SERVICE] generateImage mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:46:24.290Z"}
+{"level":"info","message":"Image generated: Create a player character sprite - variation 2, pixel, game sprite, transparent background, clean edges","timestamp":"2026-02-23T10:46:37.365Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T10:46:37.373Z"}
+{"level":"error","message":"Replicate sprite generation error: Replicate is not configured. Set REPLICATE_API_TOKEN for real sprite generation.","timestamp":"2026-02-23T10:46:37.374Z"}
+{"error":"Failed to generate sprite","level":"warn","message":"[AI][BACKEND] Replicate sprite failed, falling back to OpenAI image generation","timestamp":"2026-02-23T10:46:37.374Z"}
+{"level":"info","message":"[AI][SERVICE] generateImage mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:46:37.374Z"}
+{"level":"info","message":"Image generated: Create a player character sprite - variation 3, pixel, game sprite, transparent background, clean edges","timestamp":"2026-02-23T10:46:52.004Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-sprite","timestamp":"2026-02-23T10:46:52.025Z"}
+{"level":"error","message":"Replicate sprite generation error: Replicate is not configured. Set REPLICATE_API_TOKEN for real sprite generation.","timestamp":"2026-02-23T10:46:52.027Z"}
+{"error":"Failed to generate sprite","level":"warn","message":"[AI][BACKEND] Replicate sprite failed, falling back to OpenAI image generation","timestamp":"2026-02-23T10:46:52.027Z"}
+{"level":"info","message":"[AI][SERVICE] generateImage mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:46:52.027Z"}
+{"level":"info","message":"Image generated: Create a player character sprite - variation 4, pixel, game sprite, transparent background, clean edges","timestamp":"2026-02-23T10:47:04.253Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:47:26.312Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:47:26.333Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-3d-model","timestamp":"2026-02-23T10:47:31.146Z"}
+{"level":"error","message":"Replicate 3D generation error: Replicate is not configured. Set REPLICATE_API_TOKEN for real 3D preview generation.","timestamp":"2026-02-23T10:47:31.148Z"}
+{"error":"Failed to generate 3D preview","level":"warn","message":"[AI][BACKEND] Replicate 3D preview failed, falling back to OpenAI image generation","timestamp":"2026-02-23T10:47:31.148Z"}
+{"level":"info","message":"[AI][SERVICE] generateImage mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:47:31.148Z"}
+{"level":"info","message":"Image generated: Generate a forest background, 3D render, isometric view, game asset, clean background","timestamp":"2026-02-23T10:47:44.711Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-image","timestamp":"2026-02-23T10:47:44.726Z"}
+{"level":"info","message":"[AI][SERVICE] generateImage mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:47:44.728Z"}
+{"level":"info","message":"Image generated: 3D rendered game model of Generate a forest background, low poly style, clean background, isometric view","timestamp":"2026-02-23T10:47:56.470Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:48:27.818Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:48:51.959Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:48:51.980Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:48:52.511Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-music","timestamp":"2026-02-23T10:48:58.212Z"}
+{"level":"info","message":"[AI][SERVICE] generateMusicTrack mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T10:48:58.215Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T10:48:59.592Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-23T10:49:01.545Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:50:53.763Z"}
+{"level":"info","message":"GET /api/v1/engine/netcode/config","timestamp":"2026-02-23T10:50:53.766Z"}
+{"level":"info","message":"POST /api/v1/multiplayer","timestamp":"2026-02-23T10:50:55.071Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:50:55.087Z"}
+{"level":"info","message":"GET /api/v1/assets","timestamp":"2026-02-23T10:51:05.961Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:52:13.755Z"}
+{"level":"info","message":"GET /api/v1/engine/netcode/config","timestamp":"2026-02-23T10:52:13.757Z"}
+{"level":"info","message":"POST /api/v1/multiplayer","timestamp":"2026-02-23T10:52:15.038Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:52:15.053Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:53:06.608Z"}
+{"level":"info","message":"User connected: 699163555bd776c091656850","timestamp":"2026-02-23T10:53:06.611Z"}
+{"level":"info","message":"GET /api/v1/engine/netcode/config","timestamp":"2026-02-23T10:53:06.611Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:53:11.598Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:53:16.615Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:53:21.606Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:53:26.618Z"}
+{"level":"info","message":"User disconnected: 699163555bd776c091656850","timestamp":"2026-02-23T10:53:27.672Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:53:27.684Z"}
+{"level":"info","message":"User connected: 699163555bd776c091656850","timestamp":"2026-02-23T10:53:27.685Z"}
+{"level":"info","message":"GET /api/v1/engine/netcode/config","timestamp":"2026-02-23T10:53:27.686Z"}
+{"level":"info","message":"User disconnected: 699163555bd776c091656850","timestamp":"2026-02-23T10:53:31.966Z"}
+{"level":"info","message":"User connected: 699163555bd776c091656850","timestamp":"2026-02-23T10:53:39.680Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:53:39.680Z"}
+{"level":"info","message":"GET /api/v1/engine/netcode/config","timestamp":"2026-02-23T10:53:39.681Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:53:44.692Z"}
+{"level":"info","message":"POST /api/v1/multiplayer","timestamp":"2026-02-23T10:53:46.575Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:53:46.589Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T10:53:49.682Z"}
+{"level":"info","message":"User disconnected: 699163555bd776c091656850","timestamp":"2026-02-23T10:53:52.573Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:56:04.719Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:56:04.725Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:56:12.377Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:56:12.381Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:56:36.334Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:56:36.336Z"}
+{"level":"info","message":"POST /api/v1/multiplayer","timestamp":"2026-02-23T10:56:55.292Z"}
+{"level":"info","message":"POST /api/v1/multiplayer/session_1771844215293_45lcd2/join","timestamp":"2026-02-23T10:56:55.383Z"}
+{"level":"info","message":"DELETE /api/v1/multiplayer/session_1771844215293_45lcd2","timestamp":"2026-02-23T10:56:55.471Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-01.ozfjma4.mongodb.net","timestamp":"2026-02-23T10:57:09.645Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T10:57:09.649Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T11:18:21.247Z"}
+{"level":"info","message":"User connected: 699163555bd776c091656850","timestamp":"2026-02-23T11:29:41.656Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T11:29:41.658Z"}
+{"level":"info","message":"GET /api/v1/engine/netcode/config","timestamp":"2026-02-23T11:29:41.661Z"}
+{"level":"info","message":"POST /api/v1/multiplayer","timestamp":"2026-02-23T11:29:42.870Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T11:29:42.972Z"}
+{"level":"info","message":"User disconnected: 699163555bd776c091656850","timestamp":"2026-02-23T11:29:45.756Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-02.ozfjma4.mongodb.net","timestamp":"2026-02-23T11:30:13.661Z"}
+{"level":"info","message":"GET /health","timestamp":"2026-02-23T11:30:57.953Z"}
+{"level":"info","message":"GET /api/v1/ai/status","timestamp":"2026-02-23T11:30:58.390Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T11:37:02.463Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T11:41:41.252Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T11:41:41.635Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T11:41:44.032Z"}
+{"level":"info","message":"MongoDB Connected: ac-gtlfosu-shard-00-00.ozfjma4.mongodb.net","timestamp":"2026-02-23T11:44:08.929Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-02-23T11:44:08.934Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T11:47:26.991Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T11:47:28.766Z"}
+{"level":"info","message":"POST /api/v1/auth/login","timestamp":"2026-02-23T11:48:09.585Z"}
+{"level":"info","message":"User logged in: test@example.com","timestamp":"2026-02-23T11:48:09.796Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T11:48:09.840Z"}
+{"level":"info","message":"GET /api/v1/engine/sky-metro/leaderboard","timestamp":"2026-02-23T11:48:11.753Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T11:48:27.345Z"}
+{"level":"info","message":"GET /api/v1/scenes","timestamp":"2026-02-23T11:48:27.997Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T11:48:31.895Z"}
+{"level":"info","message":"GET /api/v1/multiplayer","timestamp":"2026-02-23T11:48:34.285Z"}
+{"level":"info","message":"User connected: 699163555bd776c091656850","timestamp":"2026-02-23T11:48:34.288Z"}
+{"level":"info","message":"GET /api/v1/engine/netcode/config","timestamp":"2026-02-23T11:48:34.289Z"}
+{"level":"info","message":"User disconnected: 699163555bd776c091656850","timestamp":"2026-02-23T11:48:38.809Z"}
+{"level":"info","message":"GET /api/v1/engine/sky-metro/leaderboard","timestamp":"2026-02-23T11:48:45.891Z"}
+{"level":"info","message":"GET /api/v1/engine/sky-metro/leaderboard","timestamp":"2026-02-23T11:48:47.509Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T11:48:48.806Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T11:48:48.934Z"}
+{"level":"info","message":"GET /api/v1/engine/sky-metro/leaderboard","timestamp":"2026-02-23T11:52:40.612Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T11:52:50.270Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T11:52:50.393Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T11:52:53.540Z"}
+{"level":"info","message":"GET /api/v1/scenes","timestamp":"2026-02-23T11:52:54.282Z"}
+{"level":"info","message":"GET /api/v1/objects","timestamp":"2026-02-23T11:52:55.701Z"}
+{"level":"info","message":"GET /api/v1/prefabs","timestamp":"2026-02-23T11:52:55.704Z"}
+{"level":"info","message":"GET /api/v1/engine/sky-metro/leaderboard","timestamp":"2026-02-23T11:53:07.415Z"}
+{"level":"info","message":"POST /api/v1/engine/sky-metro/runs","timestamp":"2026-02-23T11:53:19.826Z"}
+{"level":"info","message":"GET /api/v1/engine/sky-metro/leaderboard","timestamp":"2026-02-23T11:53:19.843Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T11:53:31.702Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T11:53:31.817Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T11:55:14.545Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T11:55:14.661Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T12:01:18.689Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T12:01:20.725Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T12:02:10.734Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T12:03:33.069Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T12:04:12.080Z"}
+{"level":"info","message":"GET /api/v1/scenes","timestamp":"2026-02-23T12:04:14.116Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T12:05:06.938Z"}
+{"level":"info","message":"GET /api/v1/ai/suggested-commands","timestamp":"2026-02-23T12:06:32.144Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T12:12:55.741Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T12:35:41.891Z"}
+{"level":"info","message":"GET /api/v1/scenes","timestamp":"2026-02-23T12:35:42.685Z"}
+{"level":"info","message":"GET /api/v1/objects","timestamp":"2026-02-23T12:35:43.888Z"}
+{"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-02-23T12:37:37.159Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T12:37:37.275Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T12:38:13.932Z"}
+{"level":"info","message":"GET /api/v1/scenes","timestamp":"2026-02-23T12:38:14.661Z"}
+{"level":"info","message":"GET /api/v1/objects","timestamp":"2026-02-23T12:38:15.468Z"}
+{"level":"info","message":"GET /api/v1/prefabs","timestamp":"2026-02-23T12:38:15.470Z"}
+{"level":"info","message":"GET /api/v1/projects","timestamp":"2026-02-23T12:39:05.131Z"}
+{"level":"info","message":"POST /api/v1/projects","timestamp":"2026-02-23T12:39:13.727Z"}
+{"level":"info","message":"Project created: 699c4a71fb8088700d3b64b6","timestamp":"2026-02-23T12:39:13.838Z"}
+{"level":"info","message":"GET /api/v1/scenes","timestamp":"2026-02-23T12:39:15.084Z"}
+{"level":"info","message":"POST /api/v1/scenes","timestamp":"2026-02-23T12:39:16.054Z"}
+{"level":"info","message":"Scene created: 699c4a74fb8088700d3b64bb for project: 699c4a71fb8088700d3b64b6","timestamp":"2026-02-23T12:39:16.266Z"}
+{"level":"info","message":"GET /api/v1/scenes","timestamp":"2026-02-23T12:39:16.276Z"}
+{"level":"info","message":"GET /api/v1/objects","timestamp":"2026-02-23T12:39:17.221Z"}
+{"level":"info","message":"GET /api/v1/prefabs","timestamp":"2026-02-23T12:39:17.223Z"}
+{"level":"info","message":"POST /api/v1/objects","timestamp":"2026-02-23T12:39:25.141Z"}
+{"level":"info","message":"GameObject created: 699c4a7dfb8088700d3b64c1","timestamp":"2026-02-23T12:39:25.298Z"}
+{"level":"info","message":"GET /api/v1/scenes","timestamp":"2026-02-23T12:39:41.971Z"}
+{"level":"info","message":"GET /api/v1/objects","timestamp":"2026-02-23T12:39:42.699Z"}
+{"level":"info","message":"GET /api/v1/prefabs","timestamp":"2026-02-23T12:39:42.701Z"}
+{"level":"info","message":"GET /api/v1/objects","timestamp":"2026-02-23T12:39:53.297Z"}
+{"level":"info","message":"GET /api/v1/prefabs","timestamp":"2026-02-23T12:39:53.299Z"}
+{"level":"info","message":"GET /api/v1/objects","timestamp":"2026-02-23T12:40:12.510Z"}
+{"level":"info","message":"GET /api/v1/prefabs","timestamp":"2026-02-23T12:40:12.511Z"}
+{"level":"info","message":"PUT /api/v1/objects/699c289da556c27fab1fa85f","timestamp":"2026-02-23T12:43:16.628Z"}
+{"level":"info","message":"POST /api/v1/ai/generate-code","timestamp":"2026-02-23T12:47:27.151Z"}
+{"descriptionPreview":"Create a complete playable HTML5 game with Canvas API. Game specs:\n\nGame Name: My Game\nPhysics: gravity=9.8\nGame Type: mobile\n\nRequirements:\n- HTML5 Canvas rendering\n- Game loop with requestAnimationFrame\n- Keyboard + touch controls\n- Collision detection\n- Score tracking\n- Game over and restart\n- Procedural sound effects via Web Audio API\n- Responsive design\n- Start screen and game over screen\n\nReturn ONLY the JavaScript code for inside a script tag.","language":"javascript","level":"info","message":"[AI][BACKEND] generate-code.request","timestamp":"2026-02-23T12:47:27.156Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"[AI][SERVICE] generateCode mode=live reason=live model=gpt-4-turbo-preview","timestamp":"2026-02-23T12:47:27.157Z"}
+{"level":"info","message":"Code generated for: Create a complete playable HTML5 game with Canvas API. Game specs:\n\nGame Name: My Game\nPhysics: gravity=9.8\nGame Type: mobile\n\nRequirements:\n- HTML5 Canvas rendering\n- Game loop with requestAnimationFrame\n- Keyboard + touch controls\n- Collision detection\n- Score tracking\n- Game over and restart\n- Procedural sound effects via Web Audio API\n- Responsive design\n- Start screen and game over screen\n\nReturn ONLY the JavaScript code for inside a script tag.","timestamp":"2026-02-23T12:48:15.677Z"}
+{"language":"javascript","level":"info","message":"[AI][BACKEND] generate-code.response","resultPreview":"{\"code\":\"```javascript\\n// Basic setup for canvas\\nconst canvas = document.createElement('canvas');\\ndocument.body.appendChild(canvas);\\ncanvas.width = window.innerWidth;\\ncanvas.height = window.innerHeight;\\nconst ctx = canvas.getContext('2d');\\n\\n// Game variables\\nlet gravity = 9.8;\\nlet score = 0;\\nlet gameRunning = false;\\nlet player;\\nlet obstacles = [];\\nlet lastTime = 0;\\nlet touchStart = null;\\nlet audioContext;\\n\\n// Player setup\\nconst playerSize = 30;\\nconst playerInitialPosition = { x: 50, y: canvas.height / 2 };\\n\\n// Obstacle setup\\nconst obstacleWidth = 30;\\nconst obstacleGap = 200;\\nconst obstacleSpeed = 3;\\n\\n// Responsive design\\nwindow.addEventListener('resize', () => {\\n    canvas.width = window.innerWidth;\\n    canvas.height = window.innerHeight;\\n    player.y = canvas.height / 2;\\n});\\n\\n// Input handling\\nwindow.addEventListener('keydown', (e) => {\\n    if (e.key === ' ' || e.key === 'ArrowUp') {\\n        player.velocityY = -10; // Jump power\\n        playJumpSound();\\n    }\\n});\\n\\ncanvas.addEventListener('touchstart', (e) => {\\n    touchStart = e.touches[0].clientY;\\n});\\n\\ncanvas.addEventListener('touchend', (e) => {\\n    if (touchStart - e.changedTouches[0].clientY > 30) {\\n        player.velocityY = -10; // Jump power for touch\\n        playJumpSound();\\n    }\\n    touchStart = null;\\n});\\n\\nfunction restartGame() {\\n    score = 0;\\n    player = { x: playerInitialPosition.x, y: playerInitialPosition.y, velocityY: 0 };\\n    obstacles = [];\\n    gameRunning = true;\\n    window.requestAnimationFrame(gameLoop);\\n}\\n\\n// Game loop\\nfunction gameLoop(timestamp) {\\n    if (!gameRunning) return;\\n    const delta = timestamp - lastTime;\\n    lastTime = timestamp;\\n\\n    ctx.clearRect(0, 0, canvas.width, canvas.height);\\n    updatePlayer(delta);\\n    updateObstacles(delta);\\n    checkCollisions();\\n    drawPlayer();\\n    drawObstacles();\\n    drawScore();\\n\\n    window.requestAnimationFrame(gameLoop);\\n}\\n\\nfunction updatePlayer(delta) {\\n    player.velocityY += gravity * delta * 0.001; // Adjust gravity effect\\n    player.y += player.velocityY;\\n    \\n    // Prevent player from going out of bounds\\n    if (player.y + playerSize > canvas.height) {\\n        player.y = canvas.height - playerSize;\\n        player.velocityY = 0;\\n    } else if (player.y < 0) {\\n        player.y = 0;\\n        player.velocityY = 0;\\n    }\\n}\\n\\nfunction updateObstacles(delta) {\\n    if (obstacles.length === 0 || obstacles[obstacles.length - 1].x < canvas.width - obstacleGap) {\\n        createObstacle();\\n    }\\n\\n    obstacles.forEach(obstacle => {\\n        obstacle.x -= obstacleSpeed;\\n    });\\n\\n    obstacles = obstacles.filter(obstacle => obstacle.x + obstacleWidth > 0);\\n\\n    score += delta * 0.01; // Increase score over time\\n}\\n\\nfunction createObstacle() {\\n    const heightTop = Math.random() * (canvas.height / 2) + 50; // Min height of 50 for top obstacle\\n    const gap = 150; // Gap between top and bottom obstacle\\n    const obstacleTop = {...(truncated)","resultType":"object","timestamp":"2026-02-23T12:48:15.678Z","userId":"699163555bd776c091656850"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","timestamp":"2026-02-23T16:57:44.417Z"}

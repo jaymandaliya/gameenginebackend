@@ -23,28 +23,29 @@ const getOpenAIClient = () => {
   return new OpenAI({ apiKey: cfg.key });
 };
 
+const toDataUrlFromAudioResponse = async (audioResponse, mimeType = 'audio/mpeg') => {
+  const arrayBuffer = await audioResponse.arrayBuffer();
+  const base64Audio = Buffer.from(arrayBuffer).toString('base64');
+  return `data:${mimeType};base64,${base64Audio}`;
+};
+
 const logMode = (feature) => {
   const cfg = getRuntimeAIConfig();
   logger.info(`[AI][SERVICE] ${feature} mode=${cfg.isMockMode ? 'mock' : 'live'} reason=${cfg.reason} model=${cfg.model}`);
   return cfg;
 };
 
+const ensureLiveAI = (cfg, featureLabel) => {
+  if (cfg.isMockMode) {
+    throw new Error(`AI mock mode is enabled (${cfg.reason}). ${featureLabel} requires a valid OPENAI_API_KEY.`);
+  }
+};
+
 // Parse natural language commands to game actions
 export const parseCommand = async (command) => {
   try {
     const cfg = logMode('parseCommand');
-
-    if (cfg.isMockMode) {
-      return {
-        action: 'create_object',
-        parameters: {
-          type: 'sprite',
-          name: 'Player',
-          position: { x: 100, y: 100 }
-        },
-        confidence: 0.95
-      };
-    }
+    ensureLiveAI(cfg, 'Command parsing');
 
     const openai = getOpenAIClient();
     if (!openai) throw new Error('OpenAI client unavailable');
@@ -93,15 +94,7 @@ Respond ONLY with valid JSON in this format:
 export const generateImage = async (prompt, style = 'realistic') => {
   try {
     const cfg = logMode('generateImage');
-
-    if (cfg.isMockMode) {
-      return {
-        url: `https://placehold.co/1024x1024/png?text=${encodeURIComponent(prompt)}`,
-        prompt,
-        style,
-        model: 'mock'
-      };
-    }
+    ensureLiveAI(cfg, 'Image generation');
 
     const openai = getOpenAIClient();
     if (!openai) throw new Error('OpenAI client unavailable');
@@ -131,14 +124,7 @@ export const generateImage = async (prompt, style = 'realistic') => {
 export const generateCode = async (description, language = 'javascript') => {
   try {
     const cfg = logMode('generateCode');
-
-    if (cfg.isMockMode) {
-      return {
-        code: `// ${description}\nfunction gameLogic() {\n  console.log('Mock code generated');\n}`,
-        language,
-        explanation: 'This is mock generated code'
-      };
-    }
+    ensureLiveAI(cfg, 'Code generation');
 
     const openai = getOpenAIClient();
     if (!openai) throw new Error('OpenAI client unavailable');
@@ -180,14 +166,7 @@ export const generateCode = async (description, language = 'javascript') => {
 export const generateDialogue = async (character, context) => {
   try {
     const cfg = logMode('generateDialogue');
-
-    if (cfg.isMockMode) {
-      return {
-        dialogue: `Hello traveler! I am ${character.name}. Welcome to our realm!`,
-        emotion: 'friendly',
-        character: character.name
-      };
-    }
+    ensureLiveAI(cfg, 'Dialogue generation');
 
     const openai = getOpenAIClient();
     if (!openai) throw new Error('OpenAI client unavailable');
@@ -233,14 +212,7 @@ Write natural, engaging dialogue that fits the character and context. Keep it co
 export const enhancePrompt = async (userPrompt, type = 'image') => {
   try {
     const cfg = logMode('enhancePrompt');
-
-    if (cfg.isMockMode) {
-      return {
-        original: userPrompt,
-        enhanced: `${userPrompt}, high quality, detailed, professional game asset`,
-        improvements: ['Added quality modifiers', 'Made more specific']
-      };
-    }
+    ensureLiveAI(cfg, 'Prompt enhancement');
 
     const openai = getOpenAIClient();
     if (!openai) throw new Error('OpenAI client unavailable');
@@ -275,10 +247,99 @@ Respond with JSON: {"enhanced": "enhanced prompt", "improvements": ["list", "of"
   }
 };
 
+export const generateVoiceLine = async ({ text, voice = 'alloy', emotion = 'neutral' }) => {
+  try {
+    const cfg = logMode('generateVoiceLine');
+    ensureLiveAI(cfg, 'Voice generation');
+
+    const openai = getOpenAIClient();
+    if (!openai) throw new Error('OpenAI client unavailable');
+
+    const speech = await openai.audio.speech.create({
+      model: process.env.OPENAI_TTS_MODEL || 'gpt-4o-mini-tts',
+      voice,
+      input: `[${emotion}] ${text}`,
+      format: 'mp3',
+    });
+
+    return {
+      audioUrl: await toDataUrlFromAudioResponse(speech),
+      voice,
+      emotion,
+      text,
+      format: 'mp3',
+    };
+  } catch (error) {
+    logger.error('OpenAI voice generation error:', error.message);
+    throw new Error(error.message || 'Failed to generate voice line');
+  }
+};
+
+export const generateMusicTrack = async ({ prompt, genre = 'epic', duration = 120, tempo = 'medium' }) => {
+  try {
+    const cfg = logMode('generateMusicTrack');
+    ensureLiveAI(cfg, 'Music generation');
+
+    const openai = getOpenAIClient();
+    if (!openai) throw new Error('OpenAI client unavailable');
+
+    const musicInstruction = `Create an instrumental game music loop. Genre: ${genre}. Tempo: ${tempo}. Target duration: ${duration} seconds. Mood prompt: ${prompt}. No spoken words.`;
+    const speech = await openai.audio.speech.create({
+      model: process.env.OPENAI_TTS_MODEL || 'gpt-4o-mini-tts',
+      voice: 'alloy',
+      input: musicInstruction,
+      format: 'mp3',
+    });
+
+    return {
+      audioUrl: await toDataUrlFromAudioResponse(speech),
+      prompt,
+      genre,
+      tempo,
+      duration,
+      format: 'mp3',
+      name: `${genre} track`,
+    };
+  } catch (error) {
+    logger.error('OpenAI music generation error:', error.message);
+    throw new Error(error.message || 'Failed to generate music track');
+  }
+};
+
+export const generateSfxClip = async ({ prompt }) => {
+  try {
+    const cfg = logMode('generateSfxClip');
+    ensureLiveAI(cfg, 'SFX generation');
+
+    const openai = getOpenAIClient();
+    if (!openai) throw new Error('OpenAI client unavailable');
+
+    const speech = await openai.audio.speech.create({
+      model: process.env.OPENAI_TTS_MODEL || 'gpt-4o-mini-tts',
+      voice: 'echo',
+      input: `Generate a short game sound effect: ${prompt}. Keep it concise and impactful.`,
+      format: 'mp3',
+    });
+
+    return {
+      audioUrl: await toDataUrlFromAudioResponse(speech),
+      prompt,
+      format: 'mp3',
+      name: 'AI SFX',
+    };
+  } catch (error) {
+    logger.error('OpenAI SFX generation error:', error.message);
+    throw new Error(error.message || 'Failed to generate sound effect');
+  }
+};
+
 export default {
   parseCommand,
   generateImage,
   generateCode,
   generateDialogue,
-  enhancePrompt
+  enhancePrompt,
+  generateVoiceLine,
+  generateMusicTrack,
+  generateSfxClip
 };

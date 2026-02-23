@@ -13,3 +13,28 @@ export const getPrefab = async (req, res) => {
   if (!prefab) return res.status(404).json({ success: false, error: 'Not found' });
   res.json({ success: true, data: prefab });
 };
+
+export const createPrefab = async (req, res) => {
+  const newPrefab = {
+    id: `prefab_${Date.now()}`,
+    name: req.body.name || 'New Prefab',
+    type: req.body.type || 'custom',
+    icon: req.body.icon || '📦',
+    description: req.body.description || '',
+    cost: req.body.cost || { gold: 0 },
+    createdAt: new Date().toISOString(),
+  };
+
+  prefabs.push(newPrefab);
+  res.status(201).json({ success: true, data: newPrefab });
+};
+
+export const deletePrefab = async (req, res) => {
+  const index = prefabs.findIndex(p => p.id === req.params.id);
+  if (index === -1) {
+    return res.status(404).json({ success: false, error: 'Not found' });
+  }
+
+  prefabs.splice(index, 1);
+  return res.json({ success: true, message: 'Prefab deleted' });
+};

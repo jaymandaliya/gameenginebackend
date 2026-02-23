@@ -2,11 +2,33 @@ import GameObject from '../models/GameObject.model.js';
 import Scene from '../models/Scene.model.js';
 import logger from '../utils/logger.js';
 
+const normalizeObjectResponse = (obj) => {
+  const raw = obj.toObject ? obj.toObject() : obj;
+
+  const fallbackTransform2d = {
+    position: {
+      x: raw.position?.x ?? 0,
+      y: raw.position?.y ?? 0,
+    },
+    rotation: raw.rotation ?? 0,
+    scale: {
+      x: raw.scale?.x ?? 1,
+      y: raw.scale?.y ?? 1,
+    },
+  };
+
+  return {
+    ...raw,
+    id: raw._id || raw.id,
+    transform2d: raw.transform2d || fallbackTransform2d,
+  };
+};
+
 export const getObjects = async (req, res, next) => {
   try {
     const { sceneId } = req.query;
     const objects = await GameObject.find(sceneId ? { sceneId } : {});
-    res.json({ success: true, data: objects });
+    res.json({ success: true, data: objects.map(normalizeObjectResponse) });
   } catch (error) {
     next(error);
   }
@@ -23,7 +45,7 @@ export const createObject = async (req, res, next) => {
     }
     
     logger.info(`GameObject created: ${object._id}`);
-    res.status(201).json({ success: true, data: object });
+    res.status(201).json({ success: true, data: normalizeObjectResponse(object) });
   } catch (error) {
     next(error);
   }
@@ -41,7 +63,7 @@ export const updateObject = async (req, res, next) => {
       return res.status(404).json({ success: false, error: 'Object not found' });
     }
     
-    res.json({ success: true, data: object });
+    res.json({ success: true, data: normalizeObjectResponse(object) });
   } catch (error) {
     next(error);
   }

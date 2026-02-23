@@ -1,6 +1,7 @@
 import { Server } from 'socket.io';
 import jwt from 'jsonwebtoken';
 import logger from '../utils/logger.js';
+import netcodeService from '../services/netcode.service.js';
 
 export const initializeSocket = (server) => {
   const io = new Server(server, {
@@ -20,7 +21,11 @@ export const initializeSocket = (server) => {
 
     try {
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
-      socket.userId = decoded.userId;
+      socket.userId = decoded.userId || decoded.id;
+
+      if (!socket.userId) {
+        return next(new Error('Authentication error'));
+      }
       next();
     } catch (error) {
       next(new Error('Authentication error'));
@@ -49,6 +54,39 @@ export const initializeSocket = (server) => {
       socket.join('global');
     });
 
+    // Multiplayer room create/join/ready/input
+    socket.on('room:create', ({ roomId, tickRateHz }) => {
+      if (!roomId) return;
+      const room = netcodeService.joinRoom(roomId, socket.userId, tickRateHz || 60);
+      socket.join(`room_${roomId}`);
+      io.to(`room_${roomId}`).emit('room:state', {
+        roomId,
+        tickRateHz: room.tickRateHz,
+        players: Array.from(room.players.values()),
+      });
+    });
+
+    socket.on('room:join', ({ roomId }) => {
+      if (!roomId) return;
+      const room = netcodeService.joinRoom(roomId, socket.userId, 60);
+      socket.join(`room_${roomId}`);
+      io.to(`room_${roomId}`).emit('room:state', {
+        roomId,
+        tickRateHz: room.tickRateHz,
+        players: Array.from(room.players.values()),
+      });
+    });
+
+    socket.on('room:ready', ({ roomId, ready }) => {
+      if (!roomId) return;
+      netcodeService.setReady(roomId, socket.userId, ready);
+    });
+
+    socket.on('room:input', ({ roomId, input }) => {
+      if (!roomId || !input) return;
+      netcodeService.pushInput(roomId, socket.userId, input);
+    });
+
     // Real-time march updates
     socket.on('march_update', (data) => {
       // Broadcast to target player
@@ -61,9 +99,14 @@ export const initializeSocket = (server) => {
     });
 
     socket.on('disconnect', () => {
+      for (const room of netcodeService.rooms.keys()) {
+        netcodeService.leaveRoom(room, socket.userId);
+      }
       logger.info(`User disconnected: ${socket.userId}`);
     });
   });
+
+  netcodeService.start(io);
 
   return io;
 };

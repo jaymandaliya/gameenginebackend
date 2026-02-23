@@ -8,5 +8,7 @@ router.use(authenticate);
 
 router.get('/', prefabController.getPrefabs);
 router.get('/:id', prefabController.getPrefab);
+router.post('/', prefabController.createPrefab);
+router.delete('/:id', prefabController.deletePrefab);
 
 export default router;

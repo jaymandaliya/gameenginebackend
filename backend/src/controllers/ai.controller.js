@@ -72,7 +72,24 @@ export const generateSprite = async (req, res, next) => {
       });
     }
 
-    const result = await replicateService.generateSprite(prompt, style);
+    let result;
+    try {
+      result = await replicateService.generateSprite(prompt, style);
+    } catch (replicateError) {
+      logger.warn('[AI][BACKEND] Replicate sprite failed, falling back to OpenAI image generation', {
+        error: replicateError?.message || String(replicateError),
+      });
+
+      const fallbackImage = await openaiService.generateImage(
+        `${prompt}, ${style}, game sprite, transparent background, clean edges`,
+        style,
+      );
+
+      result = {
+        ...fallbackImage,
+        provider: 'openai-fallback',
+      };
+    }
     
     res.json({
       success: true,
@@ -95,7 +112,24 @@ export const generate3DModel = async (req, res, next) => {
       });
     }
 
-    const result = await replicateService.generate3DModelPreview(description);
+    let result;
+    try {
+      result = await replicateService.generate3DModelPreview(description);
+    } catch (replicateError) {
+      logger.warn('[AI][BACKEND] Replicate 3D preview failed, falling back to OpenAI image generation', {
+        error: replicateError?.message || String(replicateError),
+      });
+
+      const fallbackImage = await openaiService.generateImage(
+        `${description}, 3D render, isometric view, game asset, clean background`,
+        'realistic',
+      );
+
+      result = {
+        ...fallbackImage,
+        provider: 'openai-fallback',
+      };
+    }
     
     res.json({
       success: true,
@@ -179,6 +213,72 @@ export const generateDialogue = async (req, res, next) => {
 
     const result = await openaiService.generateDialogue(character, context);
     
+    res.json({
+      success: true,
+      data: result
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const generateVoice = async (req, res, next) => {
+  try {
+    const { text, voice = 'alloy', emotion = 'neutral' } = req.body;
+
+    if (!text) {
+      return res.status(400).json({
+        success: false,
+        error: 'Text is required'
+      });
+    }
+
+    const result = await openaiService.generateVoiceLine({ text, voice, emotion });
+
+    res.json({
+      success: true,
+      data: result
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const generateMusic = async (req, res, next) => {
+  try {
+    const { prompt, genre = 'epic', duration = 120, tempo = 'medium' } = req.body;
+
+    if (!prompt) {
+      return res.status(400).json({
+        success: false,
+        error: 'Prompt is required'
+      });
+    }
+
+    const result = await openaiService.generateMusicTrack({ prompt, genre, duration, tempo });
+
+    res.json({
+      success: true,
+      data: result
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const generateSfx = async (req, res, next) => {
+  try {
+    const { prompt } = req.body;
+
+    if (!prompt) {
+      return res.status(400).json({
+        success: false,
+        error: 'Prompt is required'
+      });
+    }
+
+    const result = await openaiService.generateSfxClip({ prompt });
+
     res.json({
       success: true,
       data: result
@@ -318,5 +418,19 @@ export const getSuggestedCommands = async (req, res) => {
         { text: 'Generate stone texture for walls', category: 'textures' }
       ]
     }
+  });
+};
+
+export const getVoices = async (req, res) => {
+  res.json({
+    success: true,
+    data: [
+      'alloy',
+      'ash',
+      'coral',
+      'echo',
+      'sage',
+      'verse'
+    ]
   });
 };

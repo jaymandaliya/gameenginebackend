@@ -8,6 +8,7 @@ const router = express.Router();
 // Public routes
 router.get('/status', aiController.getAIStatus);
 router.get('/suggested-commands', aiController.getSuggestedCommands);
+router.get('/voices', aiController.getVoices);
 
 // Protected routes with AI rate limiting
 router.use(authenticate);
@@ -17,6 +18,9 @@ router.use(aiLimiter);
 router.post('/parse-command', aiController.parseCommand);
 router.post('/generate-code', aiController.generateCode);
 router.post('/generate-dialogue', aiController.generateDialogue);
+router.post('/generate-voice', aiController.generateVoice);
+router.post('/generate-music', aiController.generateMusic);
+router.post('/generate-sfx', aiController.generateSfx);
 router.post('/enhance-prompt', aiController.enhancePrompt);
 
 // Image AI
