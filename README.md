@@ -4,7 +4,7 @@
 
 ## ✨ What's New - AI Integration!
 
-**🤖 10 AI-Powered Features:**
+**🤖 11 AI-Powered Features:**
 1. **Natural Language Commands** - "Create a player at 100, 200"
 2. **Sprite Generation** - AI-generated game sprites
 3. **3D Model Previews** - Generate 3D asset previews
@@ -15,6 +15,7 @@
 8. **Image Upscaling** - 2x quality improvement
 9. **Background Removal** - Clean sprite backgrounds
 10. **Image Generation** - DALL-E powered images
+11. **Prompt-to-Game Builder** - Build complete game blueprints, 3D assets, audio, and starter code
 
 ## 📦 Complete Package
 
@@ -26,7 +27,7 @@
 - ✅ 3 Asset endpoints
 - ✅ 2 Prefab endpoints
 - ✅ 3 Resource endpoints
-- ✅ **12 AI endpoints** ⭐ NEW!
+- ✅ **13 AI endpoints** ⭐ NEW!
 
 **Features:**
 - ✅ Full 2D game engine support
@@ -150,6 +151,24 @@ curl -X POST http://localhost:3000/api/v1/ai/generate-code \
   -d '{"description": "player jump with spacebar", "language": "javascript"}'
 ```
 
+### Generate Full Game Build (Standard / Next-Gen 3D)
+```bash
+curl -X POST http://localhost:3000/api/v1/ai/generate-game-builder \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "prompt": "Create a mythic 3D action RPG with cinematic boss combat",
+    "options": {
+      "mode": "next-gen-3d",
+      "nextGen3D": true,
+      "includeAssets": true,
+      "includeAudio": true,
+      "includeCode": true,
+      "camera": "3D"
+    }
+  }'
+```
+
 ### Generate NPC Dialogue
 ```bash
 curl -X POST http://localhost:3000/api/v1/ai/generate-dialogue \
@@ -202,10 +221,11 @@ curl -X POST http://localhost:3000/api/v1/ai/generate-dialogue \
 - POST `/resources/add` - Add resources
 - POST `/resources/spend` - Spend resources
 
-### 🤖 AI Services (12) ⭐ NEW!
+### 🤖 AI Services (13) ⭐ NEW!
 - GET `/ai/status` - AI service status
 - GET `/ai/suggested-commands` - Command suggestions
 - POST `/ai/parse-command` - Parse natural language
+- POST `/ai/generate-game-builder` - Generate full game blueprint + assets + code
 - POST `/ai/generate-sprite` - Generate sprites
 - POST `/ai/generate-3d-model` - Generate 3D previews
 - POST `/ai/generate-image` - Generate images
@@ -227,6 +247,10 @@ Projects support both modes:
   "mode": "2d"
 }
 ```
+
+## 📱 React Native Integration
+
+Ready-to-use mobile integration files are available in [react-native-integration/README.md](react-native-integration/README.md).
 
 **3D Project:**
 ```json

@@ -162,6 +162,123 @@ export const generateCode = async (description, language = 'javascript') => {
   }
 };
 
+export const generateGameBlueprint = async (prompt, options = {}) => {
+  try {
+    const cfg = logMode('generateGameBlueprint');
+    ensureLiveAI(cfg, 'Game blueprint generation');
+
+    const openai = getOpenAIClient();
+    if (!openai) throw new Error('OpenAI client unavailable');
+
+    const mode = options.mode === 'next-gen-3d' ? 'next-gen-3d' : 'standard';
+    const camera = options.camera || (mode === 'next-gen-3d' ? '3D' : '2D');
+
+    const response = await openai.chat.completions.create({
+      model: cfg.model,
+      messages: [
+        {
+          role: 'system',
+          content: `You are a senior game designer and technical director for modern action RPG production.
+Turn a user prompt into a complete game-builder blueprint.
+
+Return ONLY strict JSON (no markdown, no commentary) in this shape:
+{
+  "title": "string",
+  "genre": "string",
+  "camera": "2D|2.5D|3D",
+  "artStyle": "string",
+  "targetPlatform": "string",
+  "coreLoop": "string",
+  "worldSummary": "string",
+  "characters": [
+    {
+      "name": "string",
+      "role": "player|ally|enemy|npc|boss",
+      "description": "string",
+      "personality": "string",
+      "abilities": ["string"],
+      "visualPrompt": "string",
+      "spriteStyle": "pixel-art|anime|realistic|low-poly"
+    }
+  ],
+  "environments": [
+    {
+      "name": "string",
+      "description": "string",
+      "visualPrompt": "string",
+      "texturePrompt": "string"
+    }
+  ],
+  "gameplay": {
+    "objective": "string",
+    "controls": ["string"],
+    "mechanics": ["string"]
+  },
+  "scenes": [
+    {
+      "name": "string",
+      "purpose": "string",
+      "objects": [
+        {
+          "name": "string",
+          "type": "player|enemy|npc|item|obstacle|ui",
+          "description": "string"
+        }
+      ],
+      "winCondition": "string",
+      "loseCondition": "string"
+    }
+  ],
+  "audio": {
+    "musicPrompt": "string",
+    "sfx": [
+      {
+        "name": "string",
+        "prompt": "string"
+      }
+    ]
+  },
+  "cameraSystem": {
+    "mode": "third-person|isometric|first-person",
+    "movement": "string",
+    "lockOn": "string"
+  },
+  "combatSystem": {
+    "style": "string",
+    "playerMoves": ["string"],
+    "enemyArchetypes": ["string"],
+    "bossPhases": ["string"]
+  },
+  "vfxPrompts": ["string"],
+  "animationNotes": ["string"],
+  "uiElements": ["string"],
+  "codeTasks": ["string"]
+}
+
+Rules:
+- Keep practical scope for an MVP game.
+- Include at least: 1 player character, 1 enemy, 1 scene, 1 environment.
+- Make visual and audio prompts concrete and generator-ready.
+- If mode is next-gen-3d, prioritize cinematic third-person combat, dynamic camera transitions, and realistic environments suitable for 3D model generation.
+- Provide visual prompts that are usable for text-to-3D generation.`
+        },
+        {
+          role: 'user',
+          content: `mode=${mode}\ncamera=${camera}\n\n${prompt}`
+        }
+      ],
+      temperature: 0.4,
+      response_format: { type: 'json_object' }
+    });
+
+    const content = response.choices?.[0]?.message?.content || '{}';
+    return JSON.parse(content);
+  } catch (error) {
+    logger.error('OpenAI game blueprint generation error:', error.message);
+    throw new Error('Failed to generate game blueprint');
+  }
+};
+
 // Generate dialogue for NPCs
 export const generateDialogue = async (character, context) => {
   try {
@@ -337,6 +454,7 @@ export default {
   parseCommand,
   generateImage,
   generateCode,
+  generateGameBlueprint,
   generateDialogue,
   enhancePrompt,
   generateVoiceLine,

@@ -22,36 +22,92 @@ const toErrorDetails = (error) => {
   return details ? `${message} | response=${details}` : message;
 };
 
-// Generate sprite using Stable Diffusion
+// ─── Model IDs ────────────────────────────────────────────────────────────────
+// Pixel-art-xl: nerijs/pixel-art-xl (best for pixel-art game sprites)
+const PIXEL_ART_MODEL = 'nerijs/pixel-art-xl:f121d640bd286e1fdc67f9799164c1d5be36ff74576ee11c803ae5b665dd46aa';
+// SDXL: general purpose high-quality images
+const SDXL_MODEL = 'stability-ai/sdxl:39ed52f2a78e934b3ba6e2a89f5b1c712de7dfea535525255b1aa35c5565e08b';
+
+// Generate sprite using pixel-art-xl (for pixel style) or SDXL (for other styles)
 export const generateSprite = async (prompt, style = 'pixel-art') => {
   try {
     if (isMockMode) {
       throw new Error('Replicate is not configured. Set REPLICATE_API_TOKEN for real sprite generation.');
     }
 
-    const output = await replicate.run(
-      'stability-ai/sdxl:39ed52f2a78e934b3ba6e2a89f5b1c712de7dfea535525255b1aa35c5565e08b',
-      {
+    const isPixelArt = style === 'pixel-art' || style === 'pixel';
+
+    let output;
+
+    if (isPixelArt) {
+      // Use dedicated pixel-art-xl model for superior pixel sprites
+      output = await replicate.run(PIXEL_ART_MODEL, {
         input: {
-          prompt: `${prompt}, ${style}, game sprite, transparent background, clean design, high quality`,
-          negative_prompt: 'blurry, low quality, watermark, text, signature',
+          prompt: `${prompt}, pixel art, game sprite, transparent background, clean design`,
+          negative_prompt: 'blurry, low quality, watermark, text, 3d, realistic, gradient',
           width: 512,
           height: 512,
-          num_outputs: 1
-        }
-      }
-    );
+          num_inference_steps: 30,
+          guidance_scale: 7.5,
+          num_outputs: 1,
+        },
+      });
+    } else {
+      // Use SDXL for cartoon, realistic, fantasy styles
+      output = await replicate.run(SDXL_MODEL, {
+        input: {
+          prompt: `${prompt}, ${style}, game sprite, clean design, high quality`,
+          negative_prompt: 'blurry, low quality, watermark, text, signature',
+          width: 1024,
+          height: 1024,
+          num_outputs: 1,
+        },
+      });
+    }
 
-    logger.info(`Sprite generated: ${prompt}`);
+    logger.info(`Sprite generated [model=${isPixelArt ? 'pixel-art-xl' : 'sdxl'}]: ${prompt}`);
     return {
-      url: output[0],
+      url: Array.isArray(output) ? output[0] : output,
       prompt,
       style,
-      model: 'sdxl'
+      model: isPixelArt ? 'pixel-art-xl' : 'sdxl',
     };
   } catch (error) {
     logger.error(`Replicate sprite generation error: ${toErrorDetails(error)}`);
     throw new Error('Failed to generate sprite');
+  }
+};
+
+// Sprite variation via img2img (SDXL img2img) – style transfer / variation on existing sprites
+export const generateSpriteVariation = async (imageUrl, prompt, strength = 0.7) => {
+  try {
+    if (isMockMode) {
+      throw new Error('Replicate is not configured. Set REPLICATE_API_TOKEN for sprite variations.');
+    }
+
+    const output = await replicate.run(
+      'stability-ai/sdxl:39ed52f2a78e934b3ba6e2a89f5b1c712de7dfea535525255b1aa35c5565e08b',
+      {
+        input: {
+          image: imageUrl,
+          prompt: `${prompt}, game sprite, high quality`,
+          negative_prompt: 'blurry, low quality, watermark',
+          prompt_strength: strength,
+          num_outputs: 1,
+          refine: 'expert_ensemble_refiner',
+        },
+      },
+    );
+
+    logger.info(`Sprite variation generated: ${prompt}`);
+    return {
+      url: Array.isArray(output) ? output[0] : output,
+      prompt,
+      model: 'sdxl-img2img',
+    };
+  } catch (error) {
+    logger.error(`Replicate img2img error: ${toErrorDetails(error)}`);
+    throw new Error('Failed to generate sprite variation');
   }
 };
 
@@ -180,8 +236,9 @@ export const generateTexture = async (description, seamless = true) => {
 
 export default {
   generateSprite,
+  generateSpriteVariation,
   generate3DModelPreview,
   upscaleImage,
   removeBackground,
-  generateTexture
+  generateTexture,
 };

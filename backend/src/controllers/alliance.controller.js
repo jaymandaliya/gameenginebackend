@@ -8,7 +8,7 @@ export const createAlliance = async (req, res, next) => {
     const { name, tag, description } = req.body;
     
     // Check if user exists
-    const user = await User.findById(req.user.userId);
+    const user = await User.findById(req.user.id);
     if (!user) {
       return res.status(404).json({ success: false, error: 'User not found' });
     }
@@ -22,8 +22,8 @@ export const createAlliance = async (req, res, next) => {
       name,
       tag,
       description,
-      leader_id: req.user.userId,
-      members: [req.user.userId]
+      leader_id: req.user.id,
+      members: [req.user.id]
     });
     
     user.alliance_id = alliance._id;
@@ -72,7 +72,7 @@ export const getAllianceDetails = async (req, res, next) => {
 export const joinAlliance = async (req, res, next) => {
   try {
     const alliance = await Alliance.findById(req.params.id);
-    const user = await User.findById(req.user.userId);
+    const user = await User.findById(req.user.id);
     
     if (!alliance) {
       return res.status(404).json({ success: false, error: 'Alliance not found' });
@@ -94,7 +94,7 @@ export const joinAlliance = async (req, res, next) => {
       return res.status(400).json({ success: false, error: 'Alliance is closed' });
     }
     
-    alliance.members.push(req.user.userId);
+    alliance.members.push(req.user.id);
     await alliance.save();
     
     user.alliance_id = alliance._id;
@@ -110,7 +110,7 @@ export const joinAlliance = async (req, res, next) => {
 export const leaveAlliance = async (req, res, next) => {
   try {
     const alliance = await Alliance.findById(req.params.id);
-    const user = await User.findById(req.user.userId);
+    const user = await User.findById(req.user.id);
     
     if (!alliance) {
       return res.status(404).json({ success: false, error: 'Alliance not found' });
@@ -120,11 +120,11 @@ export const leaveAlliance = async (req, res, next) => {
       return res.status(404).json({ success: false, error: 'User not found' });
     }
     
-    if (alliance.leader_id.toString() === req.user.userId) {
+    if (alliance.leader_id.toString() === req.user.id) {
       return res.status(400).json({ success: false, error: 'Leader cannot leave. Transfer leadership first' });
     }
     
-    alliance.members = alliance.members.filter(m => m.toString() !== req.user.userId);
+    alliance.members = alliance.members.filter(m => m.toString() !== req.user.id);
     await alliance.save();
     
     user.alliance_id = null;
@@ -145,7 +145,7 @@ export const updateAlliance = async (req, res, next) => {
       return res.status(404).json({ success: false, error: 'Alliance not found' });
     }
     
-    if (alliance.leader_id.toString() !== req.user.userId) {
+    if (alliance.leader_id.toString() !== req.user.id) {
       return res.status(403).json({ success: false, error: 'Only leader can update alliance' });
     }
     
@@ -173,7 +173,7 @@ export const purchaseBuffs = async (req, res, next) => {
     }
     
     // Check if user is member
-    if (!alliance.members.includes(req.user.userId)) {
+    if (!alliance.members.includes(req.user.id)) {
       return res.status(403).json({ success: false, error: 'Not a member of this alliance' });
     }
     

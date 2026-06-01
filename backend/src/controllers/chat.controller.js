@@ -15,14 +15,14 @@ export const sendMessage = async (req, res, next) => {
     // If alliance channel, verify membership
     if (channel === 'alliance' && alliance_id) {
       const alliance = await Alliance.findById(alliance_id);
-      if (!alliance || !alliance.members.includes(req.user.userId)) {
+      if (!alliance || !alliance.members.includes(req.user.id)) {
         return res.status(403).json({ success: false, error: 'Not a member of this alliance' });
       }
     }
     
     const chatMessage = await ChatMessage.create({
       channel,
-      sender_id: req.user.userId,
+      sender_id: req.user.id,
       message,
       alliance_id: channel === 'alliance' ? alliance_id : null
     });
@@ -73,7 +73,7 @@ export const deleteMessage = async (req, res, next) => {
     }
     
     // Only sender or admin can delete
-    if (message.sender_id.toString() !== req.user.userId && !req.user.isAdmin) {
+    if (message.sender_id.toString() !== req.user.id && !req.user.isAdmin) {
       return res.status(403).json({ success: false, error: 'Not authorized' });
     }
     
@@ -97,7 +97,7 @@ export const reportMessage = async (req, res, next) => {
     }
     
     // Log report (in production, store in separate collection)
-    logger.warn(`Message reported: ${message._id} by user ${req.user.userId}. Reason: ${reason}`);
+    logger.warn(`Message reported: ${message._id} by user ${req.user.id}. Reason: ${reason}`);
     
     res.json({ success: true, message: 'Message reported. Admin will review.' });
   } catch (error) {
@@ -127,7 +127,7 @@ export const muteUser = async (req, res, next) => {
     // Verify authority (simplified - check if leader/officer)
     // In production, store mutes in database
     
-    logger.info(`User ${user_id} muted for ${duration} minutes by ${req.user.userId}`);
+    logger.info(`User ${user_id} muted for ${duration} minutes by ${req.user.id}`);
     
     res.json({ success: true, message: 'User muted' });
   } catch (error) {

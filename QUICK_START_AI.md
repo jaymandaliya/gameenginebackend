@@ -88,6 +88,22 @@ curl -X POST http://localhost:3000/api/v1/ai/generate-code \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{"description": "player movement with arrow keys"}'
+
+# Generate full next-gen 3D game build
+curl -X POST http://localhost:3000/api/v1/ai/generate-game-builder \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "prompt": "Create a cinematic 3D action RPG inspired by Chinese mythology",
+    "options": {
+      "mode": "next-gen-3d",
+      "nextGen3D": true,
+      "includeAssets": true,
+      "includeAudio": true,
+      "includeCode": true,
+      "camera": "3D"
+    }
+  }'
 ```
 
 ## 🎯 You're Ready!

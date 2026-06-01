@@ -77,7 +77,7 @@ export const joinEvent = async (req, res, next) => {
     
     // Check if already registered
     const alreadyRegistered = event.participants.some(
-      p => p.user_id && p.user_id.toString() === req.user.userId
+      p => p.user_id && p.user_id.toString() === req.user.id
     );
     
     if (alreadyRegistered) {
@@ -85,13 +85,13 @@ export const joinEvent = async (req, res, next) => {
     }
     
     event.participants.push({
-      user_id: req.user.userId,
+      user_id: req.user.id,
       score: 0
     });
     
     await event.save();
     
-    logger.info(`User ${req.user.userId} joined event ${event.name}`);
+    logger.info(`User ${req.user.id} joined event ${event.name}`);
     res.json({ success: true, message: 'Joined event', data: event });
   } catch (error) {
     next(error);
@@ -133,7 +133,7 @@ export const claimRewards = async (req, res, next) => {
     }
     
     const participant = event.participants.find(
-      p => p.user_id && p.user_id.toString() === req.user.userId
+      p => p.user_id && p.user_id.toString() === req.user.id
     );
     
     if (!participant) {
@@ -226,7 +226,7 @@ export const submitScore = async (req, res, next) => {
     }
     
     const participant = event.participants.find(
-      p => p.user_id && p.user_id.toString() === req.user.userId
+      p => p.user_id && p.user_id.toString() === req.user.id
     );
     
     if (!participant) {

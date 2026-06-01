@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
+    "seed": "node src/seed.js",
     "cleanup": "node cleanup-db.js"
   },
   "keywords": ["game-engine", "2d", "3d", "ai", "openai", "replicate"],

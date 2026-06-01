@@ -16,6 +16,7 @@ router.use(aiLimiter);
 
 // Text AI
 router.post('/parse-command', aiController.parseCommand);
+router.post('/generate-game-builder', aiController.generateGameBuilder);
 router.post('/generate-code', aiController.generateCode);
 router.post('/generate-dialogue', aiController.generateDialogue);
 router.post('/generate-voice', aiController.generateVoice);
