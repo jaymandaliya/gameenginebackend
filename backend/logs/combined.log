@@ -2276,3 +2276,8 @@
 {"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-06-01T18:39:51.914Z"}
 {"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-06-01T18:40:48.231Z"}
 {"level":"info","message":"GET /api/v1/auth/me","timestamp":"2026-06-01T18:47:16.866Z"}
+{"level":"info","message":"MongoDB Connected: ac-meze9jj-shard-00-01.mudtdtw.mongodb.net","timestamp":"2026-06-02T18:39:57.920Z"}
+{"level":"info","message":"Server started successfully","timestamp":"2026-06-02T18:39:57.924Z"}
+{"level":"info","message":"MongoDB Connected: ac-meze9jj-shard-00-00.mudtdtw.mongodb.net","timestamp":"2026-06-02T18:42:11.393Z"}
+{"level":"info","message":"GET /health","timestamp":"2026-06-02T18:42:15.358Z"}
+{"level":"info","message":"GET /health","timestamp":"2026-06-02T18:42:37.089Z"}
